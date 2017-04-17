@@ -1,9 +1,9 @@
 ---
-title: Git
+title: Git初学
 date: 2016-06-08 13:22:14
 categories:
-- 暂无
-- 暂无
+- 前端
+- Git
 ---
 
 #### 简介

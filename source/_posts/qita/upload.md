@@ -2,8 +2,8 @@
 title: webuploader
 date: 2017-02-24 19:58:33
 categories:
-- 暂无
-- 暂无
+- js插件
+- webuploader
 ---
 
 ####  图片
