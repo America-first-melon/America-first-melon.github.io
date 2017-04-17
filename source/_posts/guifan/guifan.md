@@ -6,6 +6,61 @@ categories:
 - 规范
 ---
 
+### CSS
+
++ 最佳选择器写法（模块）
+
+```css
+/* 这是某个模块 */
+.m-nav{}/* 模块容器 */
+.m-nav li,.m-nav a{}/* 先共性  优化组合 */
+.m-nav li{}/* 后个性  语义化标签选择器 */
+.m-nav a{}/* 后个性中的共性 按结构顺序 */
+.m-nav a.a1{}/* 后个性中的个性 */
+.m-nav a.a2{}/* 后个性中的个性 */
+.m-nav .z-crt a{}/* 交互状态变化 */
+.m-nav .z-crt a.a1{}
+.m-nav .z-crt a.a2{}
+.m-nav .btn{}/* 典型后代选择器 */
+.m-nav .btn-1{}/* 典型后代选择器扩展 */
+.m-nav .btn-dis{}/* 典型后代选择器扩展（状态） */
+.m-nav .btn.z-dis{}/* 作用同上，请二选一（如果可以不兼容IE6时使用） */
+.m-nav .m-sch{}/* 控制内部其他模块位置 */
+.m-nav .u-sel{}/* 控制内部其他元件位置 */
+.m-nav-1{}/* 模块扩展 */
+.m-nav-1 li{}
+.m-nav-dis{}/* 模块扩展（状态） */
+.m-nav.z-dis{}/* 作用同上，请二选一（如果可以不兼容IE6时使用） */
+```
+
+<!--more-->
+
++ 统一语义理解
+
+
+布局（.g-）
+
+![](/assets/guifan/1.png)
+
+
+模块（.m-）、元件（.u-）
+
+![](/assets/guifan/2.png)
+
+
+功能（.f-）
+
+![](/assets/guifan/3.png)
+
+皮肤（.s-）
+
+![](/assets/guifan/4.png)
+
+
+状态（.z-）
+
+![](/assets/guifan/5.png)
+
 ### 多行注释
 
 ```bash
@@ -41,7 +96,7 @@ var loadingModules = {};
 var _privateMethod = {};
 
 常量：
-var HTML_ENTITY = {};
+const HTML_ENTITY = {};
 
 函数及其参数：
 function stringFormat(source){}
@@ -95,3 +150,7 @@ $("#myLink")
     .show();
 
 ```
+
+
+
+
