@@ -260,43 +260,21 @@
 
     <div class="entry">
       
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
-    </div>
-
         <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
 <li><p>跳转到设置</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GoToSet</span></span>()&#123;</div><div class="line">    location.href=<span class="string">"prefs:root=General&amp;path=ManagedConfigurationList"</span>;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<pre><code>&lt;!--more--&gt;
-</code></pre><ul>
+<ul>
 <li><p>ios安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">location.href=<span class="string">'itms-services://?action=download-manifest&amp;url=https://market.x7sy.com/plist/market_version/'</span>+tg_id+<span class="string">'?'</span>+Math.random();</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li>判断是否是微信</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_weixn</span></span>()&#123;</div><div class="line">  var ua = navigator.userAgent.toLowerCase();</div><div class="line">  <span class="keyword">if</span>(ua.match(/MicroMessenger/i)==<span class="string">"micromessenger"</span>) &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>判断是否是qq</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_qq</span></span>()&#123;</div><div class="line">  var ua = navigator.userAgent.toLowerCase();</div><div class="line">  <span class="keyword">if</span>(/\bqq\b/i.test(ua)) &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>判断是否是qq浏览器</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_qqbrowser</span></span>()&#123;</div><div class="line">  var ua = navigator.userAgent.toLowerCase();</div><div class="line">  <span class="keyword">if</span>(/\bmqqbrowser\b/i.test(ua)) &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">      <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>判断是安卓还是ios终端</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var ua = navigator.userAgent.toLowerCase();</div><div class="line">var isAndroid = ua.indexOf(<span class="string">'Android'</span>) &gt; -1 || ua.indexOf(<span class="string">'Adr'</span>) &gt; -1; //android终端 </div><div class="line">var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端</div></pre></td></tr></table></figure>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2017/03/03/qita/jsbom/#more" class="more-link">Read More</a>
+          </div>
         
         
         <div class="alignright">
