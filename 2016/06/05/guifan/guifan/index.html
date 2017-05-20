@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>书写规范 | 周大侠ˇ</title>
+  <meta name="author" content="Carmelo Anthony">
+  
+  <meta name="description" content="niuniuniuniu">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="书写规范"/>
+  <meta property="og:site_name" content="周大侠ˇ"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="周大侠ˇ" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/default/avatar.png">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">周大侠ˇ</a></h1>
+		    <h2><a href="/">落霞与孤鹜齐飞ˇˇ， 秋水共长天一色。 渔舟唱晚， 响穷彭蠡之滨； 雁阵惊寒， 声断衡阳之浦。</a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>首页</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>归档</a>
+		    		
+		    		  <a href="/hexo"><i class="fa fa-book"></i>电子书</a>
+		    		
+		    		  <a href="/resume"><i class="fa fa-user"></i>关于我</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		      <a href="/atom.xml"><i class="fa fa-rss"></i>订阅</a>
+		    
+		      <a href="/customization"><i class="fa fa-question-circle"></i>留言</a>
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-06-05T12:15:45.000Z"><a href="/2016/06/05/guifan/guifan/">2016-06-05</a></time>
+        
+  
+    <h1 class="title">书写规范</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS"><span class="toc-text">CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多行注释"><span class="toc-text">多行注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命名"><span class="toc-text">命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-Variables"><span class="toc-text">jQuery Variables</span></a></li></ol>
+    </div>
+
+        <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ul>
+<li>最佳选择器写法（模块）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 这是某个模块 */</span></div><div class="line"><span class="selector-class">.m-nav</span>&#123;&#125;<span class="comment">/* 模块容器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">li</span>,<span class="selector-class">.m-nav</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 先共性  优化组合 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">li</span>&#123;&#125;<span class="comment">/* 后个性  语义化标签选择器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 后个性中的共性 按结构顺序 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span><span class="selector-class">.a1</span>&#123;&#125;<span class="comment">/* 后个性中的个性 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span><span class="selector-class">.a2</span>&#123;&#125;<span class="comment">/* 后个性中的个性 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 交互状态变化 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span><span class="selector-class">.a1</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span><span class="selector-class">.a2</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn</span>&#123;&#125;<span class="comment">/* 典型后代选择器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn-1</span>&#123;&#125;<span class="comment">/* 典型后代选择器扩展 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn-dis</span>&#123;&#125;<span class="comment">/* 典型后代选择器扩展（状态） */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn</span><span class="selector-class">.z-dis</span>&#123;&#125;<span class="comment">/* 作用同上，请二选一（如果可以不兼容IE6时使用） */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.m-sch</span>&#123;&#125;<span class="comment">/* 控制内部其他模块位置 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.u-sel</span>&#123;&#125;<span class="comment">/* 控制内部其他元件位置 */</span></div><div class="line"><span class="selector-class">.m-nav-1</span>&#123;&#125;<span class="comment">/* 模块扩展 */</span></div><div class="line"><span class="selector-class">.m-nav-1</span> <span class="selector-tag">li</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav-dis</span>&#123;&#125;<span class="comment">/* 模块扩展（状态） */</span></div><div class="line"><span class="selector-class">.m-nav</span><span class="selector-class">.z-dis</span>&#123;&#125;<span class="comment">/* 作用同上，请二选一（如果可以不兼容IE6时使用） */</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<ul>
+<li>统一语义理解</li>
+</ul>
+<p>布局（.g-）</p>
+<p><img src="/assets/guifan/1.png" alt=""></p>
+<p>模块（.m-）、元件（.u-）</p>
+<p><img src="/assets/guifan/2.png" alt=""></p>
+<p>功能（.f-）</p>
+<p><img src="/assets/guifan/3.png" alt=""></p>
+<p>皮肤（.s-）</p>
+<p><img src="/assets/guifan/4.png" alt=""></p>
+<p>状态（.z-）</p>
+<p><img src="/assets/guifan/5.png" alt=""></p>
+<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">* 函数表述</div><div class="line">*</div><div class="line">* @param &#123;string&#125; p1 参数1的说明</div><div class="line">* @param &#123;string&#125; p2 参数2的说明,比较长</div><div class="line">* 那就换行了</div><div class="line">* @param &#123;number=&#125; p3 参数3的说明（可选）</div><div class="line">* @<span class="built_in">return</span> &#123;Object&#125; 返回值描述</div><div class="line">*/</div><div class="line"></div><div class="line"><span class="keyword">function</span> foo(p1,p2,p3) &#123;</div><div class="line">  var p3 = p3 || 10;</div><div class="line">  <span class="built_in">return</span>&#123;</div><div class="line">    p1: p1,</div><div class="line">    p2: p2,</div><div class="line">    p3: p3</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">变量：</div><div class="line">var loadingModules = &#123;&#125;;</div><div class="line"></div><div class="line">私有的：</div><div class="line">var _privateMethod = &#123;&#125;;</div><div class="line"></div><div class="line">常量：</div><div class="line">const HTML_ENTITY = &#123;&#125;;</div><div class="line"></div><div class="line">函数及其参数：</div><div class="line"><span class="keyword">function</span> stringFormat(<span class="built_in">source</span>)&#123;&#125;</div><div class="line"><span class="keyword">function</span> hear(theBells)&#123;&#125;</div><div class="line"></div><div class="line">类及其方法：</div><div class="line"><span class="keyword">function</span> TextNode(value,engine)&#123;</div><div class="line">  this.value = value;</div><div class="line">  this.engine = engine;</div><div class="line">&#125;</div><div class="line"></div><div class="line">TextNode.prototype.clone = <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">  <span class="built_in">return</span> this;</div><div class="line">&#125;</div><div class="line"></div><div class="line">枚举变量及其属性：</div><div class="line">var TargetState = &#123;</div><div class="line">  READING: 1,</div><div class="line">  READED: 2,</div><div class="line">  APPLIED: 3,</div><div class="line">  READY: 4</div><div class="line">&#125;;</div><div class="line"></div><div class="line">类名使用名词:</div><div class="line"><span class="keyword">function</span> Engine(options) &#123;&#125;</div><div class="line"></div><div class="line">函数名使用动宾短语:</div><div class="line"><span class="keyword">function</span> getStyle(element) &#123;&#125;</div><div class="line"></div><div class="line">布尔类型:</div><div class="line">var isReady = <span class="literal">false</span>;</div><div class="line">var hasMoreCommands = <span class="literal">false</span>;</div></pre></td></tr></table></figure>
+<h3 id="jQuery-Variables"><a href="#jQuery-Variables" class="headerlink" title="jQuery Variables"></a>jQuery Variables</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">存放jQuery对象的变量以$开头</div><div class="line">var <span class="variable">$myDiv</span> = $(<span class="string">"#myDiv"</span>);</div><div class="line"><span class="variable">$myDiv</span>.click(<span class="function"><span class="title">function</span></span>()&#123;...&#125;);</div><div class="line"></div><div class="line">链式写法（大于3）：</div><div class="line">$(<span class="string">"#myDiv"</span>).addClass(<span class="string">"error"</span>).show();</div><div class="line"></div><div class="line">$(<span class="string">"#myLink"</span>)</div><div class="line">    .addClass(<span class="string">"bold"</span>)</div><div class="line">    .on(<span class="string">"click"</span>,myCLickHandler)</div><div class="line">    .on(<span class="string">"mouseover"</span>,myMouseOverHandler)</div><div class="line">    .show();</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/前端/">前端</a>, <a href="/categories/前端/规范/">规范</a>
+  </div>
+
+        
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+                <div id="null"></div>
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">留言</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2016/06/05/guifan/guifan/" data-title="书写规范" data-url="http://yoursite.com/2016/06/05/guifan/guifan/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"lupeng-test"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">分类</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">10</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">7</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
+</div>
+ 
+
+
+  <div class="widget tag">
+  <h3 class="title">微信公众账号</h3>
+    <ul class="entry">
+      <img src="/img/default/qrcode.jpg" alt="欢迎关注，该账号供个人学习使用，偶尔做一些开发尝试，更新频率较低。" style= "width: 100%">
+    </ul>
+</div>
+
+  <div class="widget tag">
+  <h3 class="title">日历云</h3>
+  <div id="calendar"></div>
+</div>
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"lupeng-test"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2017 Carmelo Anthony
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:undefined, root:'calendar'});
+    
+    });
+  </script>
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?9acf0cedd48dc53be256ede5a98c2aaa";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<!-- <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script> -->
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>
