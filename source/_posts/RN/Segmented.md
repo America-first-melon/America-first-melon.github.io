@@ -71,6 +71,8 @@ categories:
 
 SegmentedControlIOS来实现分段显示多个选项的渲染内容。
 
+`注意：react-native-radio-buttons有一样的插件，安卓通用`
+
 *如图：
 
 ![](/assets/rn/9.gif)
