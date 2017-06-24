@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>XMLHttpRequest | 周大侠ˇ</title>
+  <title>常用总结 | 周大侠ˇ</title>
   <meta name="author" content="Carmelo Anthony">
   
   <meta name="description" content="niuniuniuniu">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="XMLHttpRequest"/>
+  <meta property="og:title" content="常用总结"/>
   <meta property="og:site_name" content="周大侠ˇ"/>
 
   
@@ -83,10 +83,10 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2017-02-20T06:40:55.000Z"><a href="/2017/02/20/RN/XMLHttpRequest/">2017-02-20</a></time>
+        <time datetime="2017-06-01T12:40:13.000Z"><a href="/2017/06/01/qita/common/">2017-06-01</a></time>
         
   
-    <h1 class="title">XMLHttpRequest</h1>
+    <h1 class="title">常用总结</h1>
   
 
     </header>
@@ -95,13 +95,50 @@
       
         
     <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML"><span class="toc-text">HTML</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JavaScript"><span class="toc-text">JavaScript</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#移动端"><span class="toc-text">移动端</span></a></li></ol>
     </div>
 
-        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>XMLHttpRequest 对象用于在后台与服务器交换数据。</p>
-<p><img src="/assets/rn/2.png" alt=""></p>
+        <h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ul>
+<li>placeholder样式</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"answer"</span> <span class="attr">placeholder</span>=<span class="string">"请输入您的意见"</span> <span class="attr">id</span>=<span class="string">"opinion"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line">// <span class="tag">&lt;<span class="name">textarea</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span>中间不能有空格，否则会失效</div><div class="line">#opinion::-webkit-input-placeholder&#123;</div><div class="line">  font-family: "SimHei","SimSun";</div><div class="line">  color: #6B7387;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">_pickPhoto</span></span>()&#123;</div><div class="line">  ImagePicker.showImagePicker(options, (response) =&gt; &#123;</div><div class="line">    <span class="keyword">if</span> (response.didCancel) &#123;</div><div class="line">      <span class="built_in">return</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">      <span class="built_in">let</span> <span class="built_in">source</span> = <span class="string">'data:image/jpeg;base64,'</span> + response.data;</div><div class="line">      //本地演示</div><div class="line">      // <span class="built_in">let</span> user = this.state.user;</div><div class="line">      // user.avatar = <span class="built_in">source</span>;</div><div class="line">      // this.setState(&#123;</div><div class="line">      //   user: user</div><div class="line">      // &#125;);</div><div class="line">      //真实上传</div><div class="line">      <span class="built_in">let</span> timestamp = Date.now();</div><div class="line">      <span class="built_in">let</span> folder = <span class="string">'avatar'</span>;</div><div class="line">      <span class="built_in">let</span> tags = <span class="string">'app,avator'</span>;</div><div class="line">      <span class="built_in">let</span> accessToken = this.state.user.accessToken;</div><div class="line"></div><div class="line">      fetch(<span class="string">'http://rap.taobao.org/mockjs/13128/api/u/upload'</span> , &#123;</div><div class="line">       method: <span class="string">'POST'</span>,</div><div class="line">       headers: &#123;</div><div class="line">         <span class="string">'Accept'</span>: <span class="string">'application/json'</span>,</div><div class="line">         <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span>,</div><div class="line">       &#125;,</div><div class="line">       body:</div><div class="line">       JSON.stringify(&#123;</div><div class="line">         accessToken:accessToken,</div><div class="line">         timestamp:timestamp,</div><div class="line">         folder:folder,</div><div class="line">         tags:tags,</div><div class="line">        &#125;)</div><div class="line">      &#125;).then((response) =&gt; response.json())</div><div class="line">      .then((data)=&gt;&#123;</div><div class="line">        var mockData = Mock.mock(data);</div><div class="line">        <span class="keyword">if</span>(mockData &amp;&amp; mockData.success)&#123;</div><div class="line">          <span class="built_in">let</span> signature = <span class="string">'folder='</span> + folder + <span class="string">'&amp;timestamp='</span> + timestamp + CLOUDINARY.api_secret;</div><div class="line">          signature = sha1(signature);</div><div class="line"></div><div class="line">          <span class="built_in">let</span> body = new FormData();</div><div class="line">          body.append(<span class="string">'folder'</span>,folder);</div><div class="line">          body.append(<span class="string">'api_key'</span>,CLOUDINARY.api_key);</div><div class="line">          body.append(<span class="string">'file'</span>,<span class="built_in">source</span>);</div><div class="line">          body.append(<span class="string">'resource_type'</span>,<span class="string">'image'</span>);</div><div class="line">          body.append(<span class="string">'signature'</span>,signature);</div><div class="line">          body.append(<span class="string">'timestamp'</span>,timestamp);</div><div class="line">          <span class="built_in">let</span> xhr = new XMLHttpRequest();</div><div class="line">          this.setState(&#123;</div><div class="line">            avatarUploading:<span class="literal">true</span>,</div><div class="line">          &#125;)</div><div class="line">          xhr.open(<span class="string">'POST'</span>,CLOUDINARY.imgae);</div><div class="line">          xhr.onload = ()=&gt;&#123;</div><div class="line">            <span class="keyword">if</span>(xhr.status == 200)&#123;</div><div class="line">              try&#123;</div><div class="line">                response = JSON.parse(xhr.response)</div><div class="line">              &#125;</div><div class="line">              catch(e)&#123;</div><div class="line">                console.log(e);</div><div class="line">              &#125;</div><div class="line">              <span class="keyword">if</span>(response &amp;&amp; response.public_id)&#123;</div><div class="line">                <span class="built_in">let</span> user = this.state.user;</div><div class="line">                user.avatar = response.url;</div><div class="line">                this.setState(&#123;</div><div class="line">                  user:user,</div><div class="line">                  avatarProgress:0,</div><div class="line">                  avatarUploading:<span class="literal">false</span>,</div><div class="line">                &#125;,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                  AsyncStorage.setItem(<span class="string">'user'</span>,JSON.stringify(user))</div><div class="line">                &#125;)</div><div class="line">              &#125;</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">              alert(<span class="string">'请求失败'</span>);</div><div class="line">              console.log(xhr.responseText);</div><div class="line">            &#125;</div><div class="line">          &#125;</div><div class="line">          <span class="keyword">if</span>(xhr.upload)&#123;</div><div class="line">            xhr.upload.onprogress = (event)=&gt;&#123;</div><div class="line">              <span class="keyword">if</span>(event.lengthComputable)&#123;</div><div class="line">                //lengthComputable表示一个进度信息是否可用的布尔值</div><div class="line">                var percent = Number((event.loaded / event.total).toFixed(2))</div><div class="line">                this.setState(&#123;</div><div class="line">                  avatarProgress:percent,</div><div class="line">                &#125;)</div><div class="line">              &#125;</div><div class="line">            &#125;</div><div class="line">          &#125;</div><div class="line">          xhr.send(body);</div><div class="line">        &#125;</div><div class="line">      &#125;).catch((err)=&gt;&#123;console.log(err)&#125;)</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>input类点击后边框颜色</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="selector-pseudo">:focus</span> &#123; <span class="attribute">outline</span>: none; &#125;</div></pre></td></tr></table></figure>
+<h4 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h4><ul>
+<li>ios 未发布版本安装</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">location.href=<span class="string">'itms-services://?action=download-manifest&amp;url=https://market.x7sy.com/plist/market_version/'</span>+tg_id+<span class="string">'?'</span>+Math.random();</div></pre></td></tr></table></figure>
+<ul>
+<li>iPhone 未受信任跳转到设置</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"iphone-shezhi.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;body data-stat-page=<span class="string">"ios9_page"</span> data-stat-visit=<span class="string">"ios9_page"</span>&gt;</div><div class="line">      <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'trust-button'</span> <span class="attr">data-stat-pos</span>=<span class="string">'config'</span> <span class="attr">data-stat-turl</span>=<span class="string">'mobile_config/embedded.mobileprovision'</span>&gt;</span>点击前去信任<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div><div class="line">&lt;<span class="regexp">/body&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>判断是否是微信</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_weixn</span></span>()&#123;</div><div class="line">      var ua = navigator.userAgent.toLowerCase();</div><div class="line">      <span class="keyword">if</span>(ua.match(/MicroMessenger/i)==<span class="string">"micromessenger"</span>) &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">      &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>判断是否是qq</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_qq</span></span>()&#123;</div><div class="line">      var ua = navigator.userAgent.toLowerCase();</div><div class="line">      <span class="keyword">if</span>(/\bqq\b/i.test(ua)) &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">      &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>判断是否是qq浏览器</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">is_qqbrowser</span></span>()&#123;</div><div class="line">      var ua = navigator.userAgent.toLowerCase();</div><div class="line">      <span class="keyword">if</span>(/\bmqqbrowser\b/i.test(ua)) &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">      &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>判断是安卓还是ios终端</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var ua = navigator.userAgent.toLowerCase();</div><div class="line">var isAndroid = ua.indexOf(<span class="string">'Android'</span>) &gt; -1 || ua.indexOf(<span class="string">'Adr'</span>) &gt; -1; //android终端 </div><div class="line">var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端</div></pre></td></tr></table></figure>
+<h4 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h4><ul>
+<li>rem</li>
+</ul>
+<p><a href="http://www.vshowtv.com/video_list/js/common/common.js?v=2017031501" target="_blank" rel="external">参考链接1</a></p>
+<p><a href="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js" target="_blank" rel="external">淘宝flexible</a></p>
+<p><a href="https://github.com/amfe/article/issues/17" target="_blank" rel="external">使用Flexible实现手淘H5页面的终端适配</a></p>
+<p><a href="http://www.html-js.com/article/Mobile-terminal-H5-mobile-terminal-HD-multi-screen-adaptation-scheme%203041" target="_blank" rel="external">移动端高清、多屏适配方案</a></p>
+<p><a href="https://segmentfault.com/a/1190000004524243" target="_blank" rel="external">移动Web怎么做屏幕适配（一）</a></p>
 
       
     </div>
@@ -110,7 +147,7 @@
         
   
   <div class="categories">
-    <a href="/categories/框架-库/">框架+库</a>, <a href="/categories/框架-库/React-Native/">React Native</a>
+    <a href="/categories/暂无/">暂无</a>, <a href="/categories/暂无/暂无/">暂无</a>
   </div>
 
         
@@ -143,7 +180,7 @@
     
     
         <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="2017/02/20/RN/XMLHttpRequest/" data-title="XMLHttpRequest" data-url="http://yoursite.com/2017/02/20/RN/XMLHttpRequest/"></div>
+        <div class="ds-thread" data-thread-key="2017/06/01/qita/common/" data-title="常用总结" data-url="http://yoursite.com/2017/06/01/qita/common/"></div>
         <!-- 多说评论框 end -->
         <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
         <script type="text/javascript">
