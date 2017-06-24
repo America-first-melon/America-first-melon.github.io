@@ -26,6 +26,20 @@ categories:
 *:focus { outline: none; }
 ```
 
++ 绝对定位水平居中
+
+问题：字多了就会换行...
+
+```html
+<div style="position: absolute; left: 50%;">
+      <div style="position: relative; left: -50%; border: dotted red 1px;">
+            I am some centered shrink-to-fit content!
+            tum te tum
+      </div>
+</div>
+
+```
+
 #### JavaScript
 
 + ios 未发布版本安装
