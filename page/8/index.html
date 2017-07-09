@@ -84,6 +84,49 @@
     <header>
         <div class="icon"></div>
         
+        <time datetime="2016-06-05T12:15:45.000Z"><a href="/2016/06/05/guifan/guifan/">2016-06-05</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/06/05/guifan/guifan/">书写规范</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ul>
+<li>最佳选择器写法（模块）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 这是某个模块 */</span></div><div class="line"><span class="selector-class">.m-nav</span>&#123;&#125;<span class="comment">/* 模块容器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">li</span>,<span class="selector-class">.m-nav</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 先共性  优化组合 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">li</span>&#123;&#125;<span class="comment">/* 后个性  语义化标签选择器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 后个性中的共性 按结构顺序 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span><span class="selector-class">.a1</span>&#123;&#125;<span class="comment">/* 后个性中的个性 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-tag">a</span><span class="selector-class">.a2</span>&#123;&#125;<span class="comment">/* 后个性中的个性 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span>&#123;&#125;<span class="comment">/* 交互状态变化 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span><span class="selector-class">.a1</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.z-crt</span> <span class="selector-tag">a</span><span class="selector-class">.a2</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn</span>&#123;&#125;<span class="comment">/* 典型后代选择器 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn-1</span>&#123;&#125;<span class="comment">/* 典型后代选择器扩展 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn-dis</span>&#123;&#125;<span class="comment">/* 典型后代选择器扩展（状态） */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.btn</span><span class="selector-class">.z-dis</span>&#123;&#125;<span class="comment">/* 作用同上，请二选一（如果可以不兼容IE6时使用） */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.m-sch</span>&#123;&#125;<span class="comment">/* 控制内部其他模块位置 */</span></div><div class="line"><span class="selector-class">.m-nav</span> <span class="selector-class">.u-sel</span>&#123;&#125;<span class="comment">/* 控制内部其他元件位置 */</span></div><div class="line"><span class="selector-class">.m-nav-1</span>&#123;&#125;<span class="comment">/* 模块扩展 */</span></div><div class="line"><span class="selector-class">.m-nav-1</span> <span class="selector-tag">li</span>&#123;&#125;</div><div class="line"><span class="selector-class">.m-nav-dis</span>&#123;&#125;<span class="comment">/* 模块扩展（状态） */</span></div><div class="line"><span class="selector-class">.m-nav</span><span class="selector-class">.z-dis</span>&#123;&#125;<span class="comment">/* 作用同上，请二选一（如果可以不兼容IE6时使用） */</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/06/05/guifan/guifan/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2016/06/05/guifan/guifan/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
         <time datetime="2016-05-05T14:38:45.000Z"><a href="/2016/05/05/guifan/jqguifan/">2016-05-05</a></time>
         
   
@@ -130,7 +173,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">19</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">19</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
 </div>
  
 
@@ -172,7 +215,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">19</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
   </div>
 
 </aside>
