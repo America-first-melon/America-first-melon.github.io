@@ -58,6 +58,16 @@ location.href='itms-services://?action=download-manifest&url=https://market.x7sy
 </body>
 ```
 
++ ios与js交互
+
+```javascript
+
+window.webkit.messageHandlers.function.postMessage(null)
+
+//function处为ios端写的调用js的函数名，一般需要写在<script>的第一级
+
+```
+
 + 判断是否是微信
 
 ```bash
@@ -97,6 +107,31 @@ function is_qqbrowser(){
 }
 ```
 
++ 验证格式
+
+```bash
+
+var checkPhoneNumber = function(str){
+      if(str.length == 0) return false;
+      var r = /^0?1[3|4|5|7|8][0-9]\d{8}$/;
+      return r.test(str);
+};
+var checkEmailNumber = function(str) {
+      if(str.length == 0) return false;
+      var r = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return r.test(str);
+};
+var checkNumber = function(str){
+      var r = /^\+?[1-9][0-9]*$/;　　
+      return r.test(str);
+};
+
+//调用 checkPhoneNumber(value)
+```
+
+
+#### 移动端.
+
 + 判断是安卓还是ios终端
 
 ```bash
@@ -104,8 +139,6 @@ var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1; //android终端 
 var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端 
 ```
-
-#### 移动端
 
 + rem
 
