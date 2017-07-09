@@ -84,6 +84,167 @@
     <header>
         <div class="icon"></div>
         
+        <time datetime="2016-11-25T06:22:54.000Z"><a href="/2016/11/25/L7/twice/">2016-11-25</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/25/L7/twice/">label&gt;input结构触发两次</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h3 id="框架结构"><a href="#框架结构" class="headerlink" title="框架结构"></a>框架结构</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;label class=<span class="string">"label-checkbox item-content new-add"</span>&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"action"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"item-media"</span>&gt;</div><div class="line">        &lt;i class=<span class="string">"icon icon-form-checkbox"</span>&gt;&lt;/i&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item-inner item-inner-pad"</span>&gt;</div><div class="line">        &lt;div class=<span class="string">"item-title color-333"</span>&gt;新增&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/label&gt;</div><div class="line">&lt;label class=<span class="string">"label-checkbox item-content connect"</span>&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"action"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"item-media"</span>&gt;</div><div class="line">        &lt;i class=<span class="string">"icon icon-form-checkbox"</span>&gt;&lt;/i&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item-inner item-inner-pad"</span>&gt;</div><div class="line">        &lt;div class=<span class="string">"item-title color-333"</span>&gt;关联&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/label&gt;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/11/25/L7/twice/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/25/L7/twice/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-11-25T05:46:12.000Z"><a href="/2016/11/25/L7/verify/">2016-11-25</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/25/L7/verify/">即时验证输入框内容变化</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/assets/l7/3.gif" alt=""></p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/11/25/L7/verify/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/25/L7/verify/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-11-25T03:27:44.000Z"><a href="/2016/11/25/L7/60s/">2016-11-25</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/25/L7/60s/">登录验证</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h3 id="手机号检查"><a href="#手机号检查" class="headerlink" title="手机号检查"></a>手机号检查</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">checkPhone</span></span>()&#123;</div><div class="line">  var reg = /^1[3|4|5|7|8][0-9]&#123;9&#125;$/;</div><div class="line">  var reg = /^0?1[3|4|5|7|8][0-9]\d&#123;8&#125;$/;</div><div class="line">  var flag = reg.test(phone);</div><div class="line">  <span class="keyword">if</span>(!flag)&#123;</div><div class="line">      alert(<span class="string">'手机号有误，请重新填写。'</span>);</div><div class="line">      <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">  &#125;<span class="keyword">else</span>&#123;</div><div class="line"></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/11/25/L7/60s/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/25/L7/60s/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-11-22T02:06:11.000Z"><a href="/2016/11/22/jsLibPlug/jqHover/">2016-11-22</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/22/jsLibPlug/jqHover/">jq的hover事件连续触发</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>比如：连续多次来回滑动鼠标就会这样,</p>
+<p><img src="/assets/js/jquery/2.png" alt=""></p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/11/22/jsLibPlug/jqHover/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/22/jsLibPlug/jqHover/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
         <time datetime="2016-11-20T03:31:11.000Z"><a href="/2016/11/20/xiaoguo/transition2/">2016-11-20</a></time>
         
   
@@ -328,178 +489,6 @@
 
 
 
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-14T07:32:50.000Z"><a href="/2016/11/14/jianrong/rgba/">2016-11-14</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/14/jianrong/rgba/">IE8 下的 RGBA 兼容问题</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h3 id="问题表述："><a href="#问题表述：" class="headerlink" title="问题表述："></a>问题表述：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">background:rgba(0,0,0,.5);  /*支持rgba的浏览器*/</div><div class="line">filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=<span class="comment">#7f000000,endColorstr=#7f000000); /*IE8支持*/</span></div></pre></td></tr></table></figure>
-<p>下图为 rgba 和 IE filter 的转换</p>
-<p><img src="/assets/jianrong/ie8/6.png" alt=""></p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/11/14/jianrong/rgba/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/14/jianrong/rgba/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-12T10:24:02.000Z"><a href="/2016/11/12/SUI/iosbai/">2016-11-12</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/12/SUI/iosbai/">WEBAPP中IOS的position:fixed 白屏</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#表述"><span class="toc-text">表述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决"><span class="toc-text">解决</span></a></li></ol>
-    </div>
-
-        <h4 id="表述"><a href="#表述" class="headerlink" title="表述"></a>表述</h4><p>主要是IOS有这问题<br><img src="/assets/sui/9.jpg" alt=""><br>部分Android也有这问题<br><img src="/assets/sui/10.jpg" alt=""></p>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>解决方法:absolute模拟fixed效果.</p>
-<p>上代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">    position: absolute;</div><div class="line">    top: 0;</div><div class="line">    right: 0;</div><div class="line">    bottom: 0;</div><div class="line">    left: 0;</div><div class="line">    overflow: hidden;&#125;</div><div class="line">fixed&#123;</div><div class="line">    position: absolute;</div><div class="line">    top: 0;</div><div class="line">    left: 0;</div><div class="line">    width: 30%;</div><div class="line">    background: <span class="comment">#def4ff;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>或者html/body设置100%</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">html &#123; height:100%; overflow:hidden;&#125;</div><div class="line">body &#123; height:100%; overflow:hidden;&#125;</div><div class="line">.fixed &#123; position:absolute; top:10px; left:10px; width:200px; height:350px; background:<span class="comment">#fc0; &#125;</span></div><div class="line">.wrapper &#123; height:100%; overflow:auto;&#125;</div><div class="line">&lt;html&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;div class=<span class="string">"fixed"</span>&gt;左边无论怎么滚动这个窗口它都不会动的&lt;/div&gt;</div><div class="line">        &lt;div class=<span class="string">"wrapper"</span>&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<p><strong>其他：</strong></p>
-<p>另外：官方的issues也有类似的解决方案<br><a href="https://github.com/sdc-alibaba/SUI-Mobile/issues/688" target="_blank" rel="external">如果是ios,则使用position:sticky来布局</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/12/SUI/iosbai/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-11T13:35:40.000Z"><a href="/2016/11/11/SUI/history/">2016-11-11</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/11/SUI/history/">WEBAPP中history.back()返回没有效果</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="表述"><a href="#表述" class="headerlink" title="表述"></a>表述</h4><p>在谷歌浏览器模拟页面用的返回方式：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;a class=<span class="string">"icon frjj_font pull-left"</span> href=<span class="string">"#"</span> onclick=<span class="string">"window.history.go(-1);"</span>&gt;&lt;/a&gt;</div><div class="line">&lt;a class=<span class="string">"icon frjj_font pull-left"</span> href=<span class="string">"&lt;?php echo <span class="variable">$back_url</span>;?&gt;"</span>&gt;&lt;/a&gt;﻿​</div></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/11/11/SUI/history/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/11/SUI/history/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-11T13:20:39.000Z"><a href="/2016/11/11/SUI/aginst/">2016-11-11</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/11/SUI/aginst/">ＳＵＩ上拉加载与下拉刷新冲突</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h3 id="参照官网"><a href="#参照官网" class="headerlink" title="参照官网"></a>参照官网</h3><p>下面示例安装官网来写，没有问题。</p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/11/11/SUI/aginst/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/11/SUI/aginst/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
  
 <nav id="pagination">
   
@@ -515,7 +504,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">10</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">7</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">19</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
 </div>
  
 
@@ -557,7 +546,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">19</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
   </div>
 
 </aside>
