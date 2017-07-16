@@ -8,6 +8,12 @@ categories:
 
 #### HTML
 
++ IOS点击会闪一下
+
+```css
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+```
+
 + placeholder样式
 
 ```html
@@ -67,6 +73,10 @@ window.webkit.messageHandlers.function.postMessage(null)
 //function处为ios端写的调用js的函数名，一般需要写在<script>的第一级
 
 ```
+
++ android与js交互
+
+
 
 + 判断是否是微信
 
@@ -128,6 +138,41 @@ var checkNumber = function(str){
 
 //调用 checkPhoneNumber(value)
 ```
+
++ Array的最大最小值
+
+```javascript
+
+
+//最小值
+
+Array.prototype.min = function() {
+      var min = this[0];
+      var len = this.length;
+      for (var i = 1; i < len; i++){
+            if (this[i] < min){
+                  min = this[i];
+            }
+      }
+      return min;
+}
+//最大值
+Array.prototype.max = function() {
+      var max = this[0];
+      var len = this.length;
+      for (var i = 1; i < len; i++){
+            if (this[i] > max) {
+                  max = this[i];
+            }
+      }
+      return max;
+}
+```
+` 数组属于object类型 （for in 遍历会遍历出其原型上的属性） .`
+` 对象属性有可枚举和不可枚举之分,可枚举性决定了和这个属性能否
+被for in查找遍历到`
+
+<b>不想被遍历出来prototype，用for of 和 forEach.</b>
 
 
 #### 移动端.
