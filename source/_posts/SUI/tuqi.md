@@ -1,9 +1,9 @@
 ---
-title: HTML 在安卓手机端软键盘弹出顶起页面布局
+title: suiwebapp中或者HTML在安卓手机端软键盘弹出顶起页面布局
 date: 2016-11-17 19:50:56
 categories:
 - js库
-- jQuery+zepto+SUI
+- jQuery+SUI
 ---
 
 #### 分类

@@ -1,9 +1,9 @@
 ---
 title: 常用总结
-date: 2017-06-01 20:40:13
+date: 2017-07-10 20:40:13
 categories:
-- 暂无
-- 暂无
+- 前端
+- 常用
 ---
 
 #### HTML
@@ -12,6 +12,22 @@ categories:
 
 ```css
 *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+```
+
++ 手机端禁止长按复制粘贴出现
+
+```css
+*{
+    -webkit-touch-callout:none; 
+    -webkit-user-select:none; 
+    -khtml-user-select:none; 
+    -moz-user-select:none;
+    -ms-user-select:none; 
+    user-select:none;
+}
+input,textarea {
+    -webkit-user-select:auto; 
+}
 ```
 
 + placeholder样式

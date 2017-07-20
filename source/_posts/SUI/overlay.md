@@ -3,7 +3,7 @@ title: SUI自定义遮罩
 date: 2016-11-11 21:02:46
 categories:
 - js库
-- jQuery+zepto+SUI
+- jQuery+SUI
 ---
 
 ### 代码

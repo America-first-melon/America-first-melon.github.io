@@ -3,7 +3,7 @@ title: SUI翻页之后不加载CSS/JS
 date: 2016-11-11 20:30:58
 categories:
 - js库
-- jQuery+zepto+SUI
+- jQuery+SUI
 ---
 
 ### 问题描述

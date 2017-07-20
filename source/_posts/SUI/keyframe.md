@@ -2,8 +2,8 @@
 title: CSS3动画在手机浏览器或者微信浏览器里不显示
 date: 2016-11-11 20:24:01
 categories:
-- js库
-- jQuery+zepto+SUI
+- 前端
+- 兼容性
 ---
 
 ### 问题表述

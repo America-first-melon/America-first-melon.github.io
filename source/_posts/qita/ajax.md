@@ -1,9 +1,9 @@
 ---
-title: 原生ajax实现jq的方式及跨域
+title: 原生ajax实现jq的方式及跨域及ajax封装
 date: 2017-04-01 12:39:47
 categories:
-- 暂无
-- 暂无
+- 前端
+- 常用
 ---
 
 #### 代码
@@ -121,6 +121,36 @@ location ~ \.(html|json|asp|php|gif|jpg|jpeg|png|bmp|ico|rar|css|js|json|map|md|
    root D:\www;
    expires 24h;
 }
+
+```
+
+#### $.ajax简单封装
+
+```javascript
+var common = {
+      ajaxData:function(params, val, callback){
+            $.ajax({
+                  type: params.type,
+                  url: rootUrl + params.url,
+                  data: params.data,
+                  dataType: params.dataType,
+                  async: val ,
+                  success:function(response){
+                        callback(response)
+                  },
+                  error:function(error){
+                        console.log(error)
+                  }
+            })
+      },
+      oneGetReq:function(callback){
+            this.ajaxData({/*对象*/},false,function(response){
+                  callback(response);
+            });
+      }
+};
+
+common.oneGetReq(function(datas){console.log(datas)});
 
 ```
 

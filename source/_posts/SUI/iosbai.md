@@ -1,9 +1,9 @@
 ---
-title: WEBAPP中IOS的position:fixed 白屏
+title: SUI打包WEBAPP后IOS的position:fixed 白屏
 date: 2016-11-12 18:24:02
 categories:
 - js库
-- jQuery+zepto+SUI
+- jQuery+SUI
 ---
 
 #### 表述

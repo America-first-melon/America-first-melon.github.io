@@ -3,7 +3,7 @@ title: ＳＵＩ上拉加载与下拉刷新冲突
 date: 2016-11-11 21:20:39
 categories:
 - js库
-- jQuery+zepto+SUI
+- jQuery+SUI
 ---
 
 
