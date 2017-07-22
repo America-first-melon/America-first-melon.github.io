@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>原生ajax实现jq的方式及跨域 | 周大侠ˇ</title>
+  <title>原生ajax实现jq的方式及跨域及ajax封装 | 周大侠ˇ</title>
   <meta name="author" content="Carmelo Anthony">
   
   <meta name="description" content="niuniuniuniu">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="原生ajax实现jq的方式及跨域"/>
+  <meta property="og:title" content="原生ajax实现jq的方式及跨域及ajax封装"/>
   <meta property="og:site_name" content="周大侠ˇ"/>
 
   
@@ -86,7 +86,7 @@
         <time datetime="2017-04-01T04:39:47.000Z"><a href="/2017/04/01/qita/ajax/">2017-04-01</a></time>
         
   
-    <h1 class="title">原生ajax实现jq的方式及跨域</h1>
+    <h1 class="title">原生ajax实现jq的方式及跨域及ajax封装</h1>
   
 
     </header>
@@ -95,7 +95,7 @@
       
         
     <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Unsupported-Media-Type-415-错误码解析"><span class="toc-text">Unsupported Media Type 415 错误码解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#跨域"><span class="toc-text">跨域</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Unsupported-Media-Type-415-错误码解析"><span class="toc-text">Unsupported Media Type 415 错误码解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#跨域"><span class="toc-text">跨域</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax简单封装"><span class="toc-text">$.ajax简单封装</span></a></li></ol>
     </div>
 
         <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><a id="more"></a>
@@ -115,6 +115,7 @@
 <p><img src="/assets/qita/18.png" alt=""></p>
 <p>在 server 配置里</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">location /getVideo&#123;</div><div class="line"></div><div class="line">   add_header Access-Control-Allow-Origin *;</div><div class="line"></div><div class="line">   add_header Access-Control-Allow-Methods POST,GET,OPTIONS,DELETE;</div><div class="line"></div><div class="line">   proxy_pass url;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">location ~ \.(html|json|asp|php|gif|jpg|jpeg|png|bmp|ico|rar|css|js|json|map|md|zip|java|jar|txt|flv|swf|mid|doc|ppt|xls|pdf|txt|mp3|wma|ttf|woff|woff2)$  &#123;</div><div class="line">   root D:\www;</div><div class="line">   expires 24h;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="ajax简单封装"><a href="#ajax简单封装" class="headerlink" title="$.ajax简单封装"></a>$.ajax简单封装</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> common = &#123;</div><div class="line">      <span class="attr">ajaxData</span>:<span class="function"><span class="keyword">function</span>(<span class="params">params, val, callback</span>)</span>&#123;</div><div class="line">            $.ajax(&#123;</div><div class="line">                  <span class="attr">type</span>: params.type,</div><div class="line">                  <span class="attr">url</span>: rootUrl + params.url,</div><div class="line">                  <span class="attr">data</span>: params.data,</div><div class="line">                  <span class="attr">dataType</span>: params.dataType,</div><div class="line">                  <span class="attr">async</span>: val ,</div><div class="line">                  <span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</div><div class="line">                        callback(response)</div><div class="line">                  &#125;,</div><div class="line">                  <span class="attr">error</span>:<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</div><div class="line">                        <span class="built_in">console</span>.log(error)</div><div class="line">                  &#125;</div><div class="line">            &#125;)</div><div class="line">      &#125;,</div><div class="line">      <span class="attr">oneGetReq</span>:<span class="function"><span class="keyword">function</span>(<span class="params">callback</span>)</span>&#123;</div><div class="line">            <span class="keyword">this</span>.ajaxData(&#123;<span class="comment">/*对象*/</span>&#125;,<span class="literal">false</span>,<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</div><div class="line">                  callback(response);</div><div class="line">            &#125;);</div><div class="line">      &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">common.oneGetReq(<span class="function"><span class="keyword">function</span>(<span class="params">datas</span>)</span>&#123;<span class="built_in">console</span>.log(datas)&#125;);</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -123,7 +124,7 @@
         
   
   <div class="categories">
-    <a href="/categories/暂无/">暂无</a>, <a href="/categories/暂无/暂无/">暂无</a>
+    <a href="/categories/前端/">前端</a>, <a href="/categories/前端/常用/">常用</a>
   </div>
 
         
@@ -156,7 +157,7 @@
     
     
         <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="2017/04/01/qita/ajax/" data-title="原生ajax实现jq的方式及跨域" data-url="http://yoursite.com/2017/04/01/qita/ajax/"></div>
+        <div class="ds-thread" data-thread-key="2017/04/01/qita/ajax/" data-title="原生ajax实现jq的方式及跨域及ajax封装" data-url="http://yoursite.com/2017/04/01/qita/ajax/"></div>
         <!-- 多说评论框 end -->
         <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
         <script type="text/javascript">
@@ -183,7 +184,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-zepto-SUI/">jQuery+zepto+SUI</a><span class="category-list-count">7</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">20</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/调试/">调试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/">暂无</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/暂无/暂无/">暂无</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">30</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/其他/">其他</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/其他（原生？）/">其他（原生？）</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/常用/">常用</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/调试/">调试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
 </div>
  
 
@@ -225,7 +226,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">52</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
   </div>
 
 </aside>
