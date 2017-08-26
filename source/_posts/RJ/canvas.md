@@ -16,25 +16,57 @@ create-react-app + react-router 4.1 + fetch 2.0 + react 15.6
 
 #### 问题
 
-+ 1、scroll事件
++ 1、跨域
 
+在`package.json`里添加`proxy`
 
-
-地址：<https://github.com/facebookincubator/create-react-app>
-
-[需安装node]
+如下：
 
 ```bash
-npm install -g create-react-app
-
-/*慢的话：npm config set registry https://registry.npm.taobao.org */
-
-create-react-app hello-react
-
-cd hello-react
-
-npm start
-
+"proxy": {
+    "/target": {
+        "target": "http://rooturl"
+    }
+}
 ```
+引用: fecth('/target/somedirect')
 
-这个分类下是看 `react.js小书` 写的。 作者地址：[--->](http://huziketang.com/books/react/)
++ 2、scroll事件
+
+componentDidMout添加了addEventListener，scroll获取不到this，如下：
+
+如图：![](/assets/rj/6.png)
+
+还是要bind(this)
+
+如图：![](/assets/rj/7.png)
+
+但还是找不到this.scroll
+
+需要获得(e)=>{console.log(e.target)};
+
+如图：![](/assets/rj/8.png)
+
++ 3、canvas模糊
+
+点击事件获取的坐标没有问题，但是drawImage方法画出的图模糊，如下：
+
+如图：![](/assets/rj/9.png)
+
+宽高不要写在style里，写在标签上
+
+`<canvas style={{width:x,height:y}}></canvas>`-->错误
+
+`<canvas width={375} height={667-64}></canvas>`-->正确
+
++ 4、react-route的modal/index跳转
+
+index与modal多次跳转，componentWillUpdate会被多次触发，点击事件也触发该事件。
+
+但路由跳转只触发了componentWillReceiveProps
+
+如图：![](/assets/rj/10.png)
+如图：![](/assets/rj/11.png)
+
+<b>react-router4的各种关键都在this.props里面的match/location/history里面，需要多研究文档里面这三个的用法</b>
+
