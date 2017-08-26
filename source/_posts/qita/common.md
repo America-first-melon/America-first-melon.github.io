@@ -50,7 +50,7 @@ input,textarea {
 
 + 绝对定位水平居中
 
-问题：字多了就会换行...
+<b>一：</b>
 
 ```html
 <div style="position: absolute; left: 50%;">
@@ -60,6 +60,13 @@ input,textarea {
       </div>
 </div>
 
+```
+问题：字多了就会换行...
+
+<b>二：</b>
+
+```html
+css{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 ```
 
 #### JavaScript
