@@ -68,5 +68,19 @@ index与modal多次跳转，componentWillUpdate会被多次触发，点击事件
 如图：![](/assets/rj/10.png)
 如图：![](/assets/rj/11.png)
 
++ 5、打包放置在服务器
+
+服务器要配置npm环境,然后npm install serve -g
+
+serve -s 执行  
+
+如下图：
+
+![](/assets/rj/12.png)
+![](/assets/rj/13.png)
+![](/assets/rj/14.png)
+
+eg:[链接](http://139.224.3.89:5000?user_id=15499)
+
 <b>react-router4的各种关键都在this.props里面的match/location/history里面，需要多研究文档里面这三个的用法</b>
 
