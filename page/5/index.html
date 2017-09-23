@@ -84,6 +84,90 @@
     <header>
         <div class="icon"></div>
         
+        <time datetime="2016-11-17T10:45:06.000Z"><a href="/2016/11/17/xiaoguo/animate/">2016-11-17</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/17/xiaoguo/animate/">链接至锚点[平滑滚动]</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码："><span class="toc-text">代码：</span></a></li></ol>
+    </div>
+
+        <h4 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h4><p>搜索框：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.column'</span>).click(<span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    $(<span class="string">'html, body'</span>).animate(&#123;</div><div class="line">        scrollTop:$($(this).attr(<span class="string">'href'</span>)).offset().top</div><div class="line">    &#125;, 500);</div><div class="line">    <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/17/xiaoguo/animate/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-11-15T01:46:34.000Z"><a href="/2016/11/15/xiaoguo/scroll/">2016-11-15</a></time>
+        
+  
+    <h1 class="title"><a href="/2016/11/15/xiaoguo/scroll/">滚动播报</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码："><span class="toc-text">代码：</span></a></li></ol>
+    </div>
+
+        <h4 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h4><p>搜索框：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">   &lt;head&gt;</div><div class="line">       &lt;meta charset=<span class="string">"utf-8"</span>&gt;</div><div class="line">       &lt;title&gt;jQuery 文字逐行向上滚动代码&lt;/title&gt;</div><div class="line">       &lt;style&gt;</div><div class="line">           *&#123;padding:0;margin:0;&#125;</div><div class="line">           li&#123;list-style:none;&#125;</div><div class="line">           .apple&#123;width:90%;height:50px;overflow:hidden;margin:50px auto;border:1px solid red;&#125;</div><div class="line">           .apple a&#123;display:block;text-decoration:none;width:100%; height:50px; line-height:50px; text-indent:20px; color:<span class="comment">#1B96EE;&#125;</span></div><div class="line">       &lt;/style&gt;</div><div class="line">       &lt;script src=<span class="string">"jquery.min.js"</span>&gt;&lt;/script&gt;  </div><div class="line">   &lt;/head&gt;</div><div class="line">   &lt;body&gt;</div><div class="line">       &lt;div class=<span class="string">"apple"</span>&gt;</div><div class="line">           &lt;ul&gt;</div><div class="line">               &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;快使用双截棍&lt;/a&gt;&lt;/li&gt;</div><div class="line">               &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;哼哼哈嘿&lt;/a&gt;&lt;/li&gt;</div><div class="line">               &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;习武之人切记&lt;/a&gt;&lt;/li&gt;</div><div class="line">               &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;仁者无敌&lt;/a&gt;&lt;/li&gt;</div><div class="line">           &lt;/ul&gt;</div><div class="line">       &lt;/div&gt;</div><div class="line">       &lt;script&gt;</div><div class="line">           <span class="keyword">function</span> autoScroll(obj)&#123;</div><div class="line">               $(obj).find(<span class="string">"ul"</span>).animate(&#123;</div><div class="line">                   marginTop:<span class="string">"-39px"</span></div><div class="line">               &#125;,500,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                   $(this).css(&#123;marginTop:<span class="string">"0px"</span>&#125;).find(<span class="string">"li:first"</span>).appendTo(this);</div><div class="line">               &#125;)</div><div class="line">           &#125;</div><div class="line">           $(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">               <span class="built_in">set</span>Interval(<span class="string">'autoScroll(".apple")'</span>,2000);</div><div class="line">           &#125;)</div><div class="line">       &lt;/script&gt;</div><div class="line">   &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="alignright">
+          <a href="/2016/11/15/xiaoguo/scroll/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
         <time datetime="2016-11-14T10:04:56.000Z"><a href="/2016/11/14/xiaoguo/filter/">2016-11-14</a></time>
         
   
@@ -415,114 +499,6 @@
 
 
 
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-11T12:28:21.000Z"><a href="/2016/11/11/SUI/phone/">2016-11-11</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/11/SUI/phone/">手机端调试网页</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#谷歌浏览器"><span class="toc-text">谷歌浏览器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ios-webkit-debug-proxy-win64"><span class="toc-text">ios-webkit-debug-proxy-win64</span></a></li></ol>
-    </div>
-
-        <h4 id="谷歌浏览器"><a href="#谷歌浏览器" class="headerlink" title="谷歌浏览器"></a>谷歌浏览器</h4><ul>
-<li><p>连接USB</p>
-</li>
-<li><p>地址栏输入：chrome://inspect/#device</p>
-</li>
-<li><p>开VPN</p>
-</li>
-</ul>
-<p>android可以</p>
-<h4 id="ios-webkit-debug-proxy-win64"><a href="#ios-webkit-debug-proxy-win64" class="headerlink" title="ios-webkit-debug-proxy-win64"></a>ios-webkit-debug-proxy-win64</h4><p>ios下调试safari或者app里内嵌的html</p>
-<ul>
-<li><p>1、设置 &gt; Safari &gt; 高级 &gt; Web 检查 &gt; 启用</p>
-</li>
-<li><p>2、itunes安装</p>
-</li>
-<li><p>3、<a href="https://github.com/artygus/ios-webkit-debug-proxy-win32" target="_blank" rel="external">下载32或者64</a></p>
-</li>
-<li><p>4、添加环境变量C:\ios-webkit-debug-proxy-win32。(可选)</p>
-</li>
-<li><p>5、cmd 启动 ios_webkit_debug_proxy.exe -f chrome-devtools://devtools/bundled/inspector.html</p>
-</li>
-<li><p>6、输出设备列表  Connected :9222 to iPhone (c356a29f73043a36aa6de64b088d55aeeda8f034)</p>
-</li>
-<li><p>7、<a href="http://localhost:9221/" target="_blank" rel="external">http://localhost:9221/</a>   右键复制链接地址打开调试即可。</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/11/SUI/phone/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-11-11T12:24:01.000Z"><a href="/2016/11/11/SUI/keyframe/">2016-11-11</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/11/11/SUI/keyframe/">CSS3动画在手机浏览器或者微信浏览器里不显示</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h3 id="问题表述"><a href="#问题表述" class="headerlink" title="问题表述"></a>问题表述</h3><p>如图所示效果，只在电脑端显示正常，<br>传到服务器上就完啦。。。</p>
-<p><img src="/assets/sui/1.gif" alt=""></p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/11/11/SUI/keyframe/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/11/11/SUI/keyframe/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
  
 <nav id="pagination">
   
@@ -538,7 +514,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">30</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/其他/">其他</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/常用/">常用</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/调试/">调试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">24</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/Prismplayer-js/">Prismplayer.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader/">webuploader</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/集合/">集合</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">30</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/其他/">其他</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/兼容性/">兼容性</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/常用/">常用</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/规范/">规范</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/调试/">调试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/面试/">面试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/页面效果/">页面效果</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">26</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-Native/">React Native</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/React-js/">React.js</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/vue-js/">vue.js</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/小程序/">小程序</a><span class="category-list-count">2</span></li></ul></li></ul> 
 </div>
  
 
@@ -580,7 +556,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
   </div>
 
 </aside>
