@@ -67,8 +67,9 @@ input,textarea {
 
 ```html
 css{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+都行。。。。。
+css{position: absolute;width: 100%;top:50%;transform: translateY(-50%);}
 ```
-
 #### JavaScript
 
 + ios 未发布版本安装
