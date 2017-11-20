@@ -6,9 +6,13 @@ categories:
 - 页面效果
 ---
 
-#### 代码：
+#### 页面效果
+
+![](/assets/xiaoguo/11.gif)
 
 <!--more-->
+
+#### 代码：
 
 ```html
   <style> 
