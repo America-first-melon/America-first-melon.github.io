@@ -3,7 +3,8 @@ title: 时间戳创建
 date: 2016-12-02 17:38:55
 categories:
 - 前端
-- 其他
+- 常用
+- timeStamp应用
 ---
 
 ### 创建：

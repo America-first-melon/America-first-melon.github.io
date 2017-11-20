@@ -3,7 +3,7 @@ title: splice应用
 date: 2016-10-15 11:08:53
 categories:
 - 前端
-- 其他
+- 常用
 ---
 
 #### 睡眠排序

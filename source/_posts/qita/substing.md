@@ -3,7 +3,7 @@ title: substring截取
 date: 2016-11-14 17:56:46
 categories:
 - 前端
-- 其他
+- 常用
 ---
 
 #### 一

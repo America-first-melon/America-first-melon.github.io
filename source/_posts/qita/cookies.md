@@ -3,7 +3,7 @@ title: cookies
 date: 2016-10-15 15:33:58
 categories:
 - 前端
-- 其他
+- 常用
 ---
 
 #### cookies
