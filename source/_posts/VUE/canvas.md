@@ -62,6 +62,7 @@ app端调用前端的方法，在`methods`里面不会触发。
 粗暴解决方法：
 
 ```javascript
+
 export default {
     ...
     created(){
