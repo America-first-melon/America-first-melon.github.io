@@ -1,9 +1,9 @@
 ---
-title: vue传值
+title: vue组件互相传值
 date: 2017-09-01 20:01:01
 categories:
-- 框架+库
 - vue.js
+- vue组件互相传值
 ---
 
 

@@ -2,8 +2,8 @@
 title: vue.js/canvas小项目问题集合
 date: 2017-09-01 20:38:51
 categories:
-- 框架+库
 - vue.js
+- scoped/动态class/动态style/app交互
 ---
 
 #### 问题
