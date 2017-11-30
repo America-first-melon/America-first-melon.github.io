@@ -1,9 +1,9 @@
 ---
-title: propTypes
+title: L7:propTypes应用
 date: 2016-10-12 16:02:14
 categories:
 - React.js
-- L7:propTypes应用
+- 基础复习
 ---
 
 

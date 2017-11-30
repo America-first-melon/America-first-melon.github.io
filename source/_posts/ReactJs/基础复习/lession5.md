@@ -1,9 +1,9 @@
 ---
-title: 生命周期
+title: L5:生命周期解释
 date: 2016-10-08 23:55:02
 categories:
 - React.js
-- L5:生命周期解释
+- 基础复习
 ---
 
 
@@ -16,6 +16,7 @@ categories:
 <b>在React.js中完整的过程是这样：</b>
 
 ```bash
+
 -->constructor()
 
 -->componentWillMount()
@@ -27,6 +28,7 @@ categories:
 -->componentDidMount()
 
 //...
+
 //即将从页面中删除
 
 -->componentWillUnmount()
@@ -34,6 +36,8 @@ categories:
 //从页面删除
 
 ```
+
+![](/assets/rj/15.png)
 
 #### 代码
 

@@ -1,16 +1,39 @@
 ---
-title: 子->父传值
+title: 组件传值
 date: 2016-12-28 14:26:21
 categories:
 - React Native
-- 子->父传值
+- 组件传值
 ---
 
 #### 介绍
 
-父给子传值略过。。。
++ 父给子传值,可以用const的方式，不一定要class XXX extends Component
 
-上代码：
+
+```bash
+//父
+<CityPickerWrapper onGetCityPickerLable={this.getCityPickerLable.bind(this)} onGetMoveEndData={this.state.moveEndData}/>
+//子
+<Picker extra = {this.props.onGetMoveEndData}>
+  <CitySelected anotherExtra={this.props.onGetMoveEndData}/>
+</Picker>
+//子子
+const CitySelected = props => {
+  //some code 
+  let extraData = props.anotherExtra.split(',')
+  return(
+      <div className="city-selected-wrap" onClick={props.onClick}>
+          <div className="city-selected-div">{extraData[2]}</div>
+      </div>
+  )
+}
+
+```
+ps:注意`props.children`
+
+
++ 子给父传值，上代码：
 
 <!--more-->
 

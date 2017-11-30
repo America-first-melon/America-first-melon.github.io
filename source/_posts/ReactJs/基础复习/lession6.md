@@ -1,9 +1,9 @@
 ---
-title: refs和this.props.children和dangerouslySetInnerHTML
+title: L6:refs/this.props.children/dangerouslySetInnerHTML
 date: 2016-10-12 15:32:28
 categories:
 - React.js
-- L6:refs/chilidren/dangerouslySetInnerHTML
+- 基础复习
 ---
 
 

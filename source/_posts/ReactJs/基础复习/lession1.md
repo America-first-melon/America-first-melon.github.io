@@ -1,9 +1,9 @@
 ---
-title: 基本说明
+title: L1:基本说明
 date: 2016-10-08 10:58:21
 categories:
 - React.js
-- L1:基本说明
+- 基础复习
 ---
 
 
