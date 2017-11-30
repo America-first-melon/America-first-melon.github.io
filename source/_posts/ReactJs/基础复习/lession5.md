@@ -2,7 +2,7 @@
 title: L5:生命周期解释
 date: 2016-10-08 23:55:02
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

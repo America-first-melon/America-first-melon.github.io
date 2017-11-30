@@ -2,7 +2,7 @@
 title: 设置像素
 date: 2017-01-15 12:58:10
 categories:
-- React Native
+- 【React Native】
 - 设置像素
 ---
 

@@ -2,7 +2,7 @@
 title: 省市级多选+checkbox多选+幼小初高多选
 date: 2017-02-21 20:48:11
 categories:
-- js插件
+- 【JS插件】
 - checkbox+city多选器
 ---
 

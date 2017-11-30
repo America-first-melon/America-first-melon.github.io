@@ -2,7 +2,7 @@
 title: 点击空白处隐藏
 date: 2016-11-25 14:45:29
 categories:
-- js库
+- 【JS库】
 - jQuery+L7
 ---
 

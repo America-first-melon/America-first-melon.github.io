@@ -2,7 +2,7 @@
 title: P8:wechat验证失败
 date: 2017-11-01 22:15:26
 categories:
-- React.js
+- 【React.js】
 - AMap公众号
 ---
 

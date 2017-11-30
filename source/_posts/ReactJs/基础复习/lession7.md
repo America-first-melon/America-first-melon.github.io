@@ -2,7 +2,7 @@
 title: L7:propTypes应用
 date: 2016-10-12 16:02:14
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

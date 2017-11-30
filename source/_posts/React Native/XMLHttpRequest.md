@@ -2,7 +2,7 @@
 title: XMLHttpRequest
 date: 2017-02-20 14:40:55
 categories:
-- React Native
+- 【React Native】
 - XMLHttpRequest的一种使用
 ---
 

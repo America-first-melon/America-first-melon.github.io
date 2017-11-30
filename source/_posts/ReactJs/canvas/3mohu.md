@@ -2,7 +2,7 @@
 title: P3.reactjs下canvas模糊
 date: 2017-07-30 19:55:46
 categories:
-- React.js
+- 【React.js】
 - canvas小项目
 ---
 

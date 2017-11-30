@@ -2,7 +2,7 @@
 title: 阿里云视频点播web端
 date: 2017-07-01 16:38:22
 categories:
-- js插件
+- 【JS插件】
 - 阿里云视频点播web端
 ---
 

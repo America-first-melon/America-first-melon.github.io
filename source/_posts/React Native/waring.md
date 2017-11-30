@@ -2,7 +2,7 @@
 title: Warning setState(...) Can only update a mounted or mounting component]...
 date: 2017-02-10 14:31:10
 categories:
-- React Native
+- 【React Native】
 - Warning setState(...) Can only update a mounted or mounting component]...
 ---
 

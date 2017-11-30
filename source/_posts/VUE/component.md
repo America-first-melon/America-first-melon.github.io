@@ -2,7 +2,7 @@
 title: vue组件互相传值
 date: 2017-09-01 20:01:01
 categories:
-- vue.js
+- 【VUE】
 - vue组件互相传值
 ---
 

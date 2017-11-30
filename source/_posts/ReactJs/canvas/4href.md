@@ -2,7 +2,7 @@
 title: P4.reactjs下modal跳转
 date: 2017-07-30 19:55:39
 categories:
-- React.js
+- 【React.js】
 - canvas小项目
 ---
 

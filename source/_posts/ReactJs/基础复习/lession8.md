@@ -2,7 +2,7 @@
 title: L8:评论案例
 date: 2016-10-13 11:12:28
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

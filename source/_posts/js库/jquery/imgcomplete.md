@@ -2,7 +2,7 @@
 title: jq-img的complete事件
 date: 2016-12-02 13:41:12
 categories:
-- js库
+- 【JS库】
 - jQuery
 ---
 

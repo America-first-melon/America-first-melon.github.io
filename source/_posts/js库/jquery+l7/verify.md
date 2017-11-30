@@ -2,7 +2,7 @@
 title: jq如何即时验证输入框内容变化？
 date: 2016-11-25 13:46:12
 categories:
-- js库
+- 【JS库】
 - jQuery+L7
 ---
 

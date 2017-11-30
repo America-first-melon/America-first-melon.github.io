@@ -2,7 +2,7 @@
 title: 搜索功能
 date: 2016-12-02 17:30:20
 categories:
-- js库
+- 【JS库】
 - jQuery+L7
 ---
 

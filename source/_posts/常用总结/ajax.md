@@ -2,7 +2,7 @@
 title: 原生ajax实现jq的方式及跨域及ajax封装
 date: 2017-04-01 12:39:47
 categories:
-- 常用总结
+- 【常用总结】
 - xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码
 ---
 

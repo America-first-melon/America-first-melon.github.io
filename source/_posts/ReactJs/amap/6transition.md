@@ -2,7 +2,7 @@
 title: P6:CSSTransitionGroup应用
 date: 2017-11-01 21:30:28
 categories:
-- React.js
+- 【React.js】
 - AMap公众号
 ---
 

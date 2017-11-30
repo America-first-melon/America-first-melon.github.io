@@ -2,7 +2,7 @@
 title: IE8 下的 RGBA 兼容问题
 date: 2016-11-14 15:32:50
 categories:
-- 兼容性
+- 【兼容性】
 - IE8下的RGBA 
 ---
 

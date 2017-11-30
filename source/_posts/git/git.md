@@ -2,7 +2,7 @@
 title: Git初学
 date: 2016-06-08 13:22:14
 categories:
-- Git
+- 【Git】
 - Git初级知识
 ---
 

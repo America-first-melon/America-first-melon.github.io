@@ -2,7 +2,7 @@
 title: label>input结构触发两次
 date: 2016-11-25 14:22:54
 categories:
-- js库
+- 【JS库】
 - jQuery+L7
 ---
 

@@ -2,7 +2,7 @@
 title: P2.react监听scroll事件
 date: 2017-07-30 19:55:42
 categories:
-- React.js
+- 【React.js】
 - canvas小项目
 ---
 

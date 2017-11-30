@@ -2,7 +2,7 @@
 title: L6:refs/this.props.children/dangerouslySetInnerHTML
 date: 2016-10-12 15:32:28
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

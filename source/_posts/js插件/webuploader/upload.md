@@ -2,7 +2,7 @@
 title: webuploader
 date: 2017-02-24 19:58:33
 categories:
-- js插件
+- 【JS插件】
 - webuploader.js
 ---
 

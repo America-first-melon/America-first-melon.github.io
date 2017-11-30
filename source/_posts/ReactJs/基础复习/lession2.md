@@ -2,7 +2,7 @@
 title: L2:bind的使用
 date: 2016-10-08 14:22:17
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

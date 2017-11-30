@@ -2,7 +2,7 @@
 title: MAC常见运行错误
 date: 2017-05-01 10:33:15
 categories:
-- React Native
+- 【React Native】
 - MAC常见运行错误
 ---
 

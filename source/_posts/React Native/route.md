@@ -2,7 +2,7 @@
 title: 首页路由
 date: 2016-12-20 14:25:16
 categories:
-- React Native
+- 【React Native】
 - 一种首页路由
 ---
 

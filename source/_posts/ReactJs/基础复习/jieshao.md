@@ -2,7 +2,7 @@
 title: 简介吧
 date: 2016-10-07 22:20:18
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

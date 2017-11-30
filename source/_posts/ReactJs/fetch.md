@@ -2,7 +2,7 @@
 title: 通用Fetch和对象构造
 date: 2017-03-20 18:20:56
 categories:
-- React.js
+- 【React.js】
 - 通用Fetch
 ---
 

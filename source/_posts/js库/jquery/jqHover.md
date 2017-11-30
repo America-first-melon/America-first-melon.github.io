@@ -2,7 +2,7 @@
 title: jq的hover事件连续触发
 date: 2016-11-22 10:06:11
 categories:
-- js库
+- 【JS库】
 - jQuery
 ---
 

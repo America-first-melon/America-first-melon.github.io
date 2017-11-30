@@ -2,7 +2,7 @@
 title: zepto和jquery的方法冲突
 date: 2016-11-08 20:16:04
 categories:
-- js库
+- 【JS库】
 - jQuery
 ---
 

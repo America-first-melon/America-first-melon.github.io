@@ -2,7 +2,7 @@
 title: IE8 下的 innerHTML 兼容问题
 date: 2016-11-01 14:32:47
 categories:
-- 兼容性
+- 【兼容性】
 - IE8下的innerHTML兼容问题
 ---
 

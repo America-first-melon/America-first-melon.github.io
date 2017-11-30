@@ -2,7 +2,7 @@
 title: P1:babel相关报错
 date: 2017-11-01 20:08:16
 categories:
-- React.js
+- 【React.js】
 - AMap公众号
 ---
 
@@ -23,34 +23,34 @@ ES6报错：Unexpected token (xx : xx)
 
 + 设置转码规则和插件，基本格式：
 
-    ```bash
-      {
-          "presets": [],
-          "plugins": []
-      }
-    ```
+```bash
+  {
+      "presets": [],
+      "plugins": []
+  }
+```
     
- + presets字段设定转码规则 
++ presets字段设定转码规则 
   
-    ```bash
-        # ES2015转码规则
-        $ npm install --save-dev babel-preset-es2015
+```bash
+    # ES2015转码规则
+    $ npm install --save-dev babel-preset-es2015
 
-        # react转码规则
-        $ npm install --save-dev babel-preset-react
-    ```
+    # react转码规则
+    $ npm install --save-dev babel-preset-react
+```
     
-    OK
+ OK
     
-    ```bssh
-      {
-        "presets": [
-          "es2015",
-          "react",
-        ],
-        "plugins": []
-      }
-    ```
+```bssh
+  {
+    "presets": [
+      "es2015",
+      "react",
+    ],
+    "plugins": []
+  }
+```
 
 相关资料:[transform-class-properties](https://babeljs.io/docs/plugins/transform-class-properties/)
   

@@ -2,7 +2,7 @@
 title: react-native-video Android 获取视频总时长
 date: 2017-02-25 17:22:58
 categories:
-- React Native
+- 【React Native】
 - react-native-video Android 获取视频总时长
 ---
 

@@ -2,7 +2,7 @@
 title: SUI打包WEBAPP后history.back()返回没有效果
 date: 2016-11-11 21:35:40
 categories:
-- js库
+- 【JS库】
 - jQuery+SUI
 ---
 

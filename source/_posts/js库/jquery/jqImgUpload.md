@@ -2,7 +2,7 @@
 title: jq的图片上传预览实现
 date: 2016-12-02 14:40:39
 categories:
-- js库
+- 【JS库】
 - jQuery
 ---
 

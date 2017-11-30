@@ -2,7 +2,7 @@
 title: tab-navigator
 date: 2017-02-25 14:31:29
 categories:
-- React Native
+- 【React Native】
 - tab-navigator
 ---
 

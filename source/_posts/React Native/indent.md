@@ -2,7 +2,7 @@
 title: RN的文字缩进
 date: 2017-02-22 13:01:00
 categories:
-- React Native
+- 【React Native】
 - RN的文字缩进
 ---
 

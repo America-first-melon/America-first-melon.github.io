@@ -2,7 +2,7 @@
 title: swipe.js 滑动之后停止
 date: 2016-11-01 20:15:59
 categories:
-- js插件
+- 【JS插件】
 - swipe.js
 ---
 

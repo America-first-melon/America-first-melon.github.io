@@ -2,7 +2,7 @@
 title: 类似SegmentedControlIOS 和 SegmentedControlIOS 的使用
 date: 2017-05-01 13:01:00
 categories:
-- React Native
+- 【React Native】
 - 类SegmentedControlIOS
 ---
 

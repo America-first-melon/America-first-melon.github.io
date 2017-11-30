@@ -2,7 +2,7 @@
 title: L3:props/state应用
 date: 2016-10-08 19:55:56
 categories:
-- React.js
+- 【React.js】
 - 基础复习
 ---
 

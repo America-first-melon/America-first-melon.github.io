@@ -2,7 +2,7 @@
 title: SUI翻页之后不加载CSS/JS
 date: 2016-11-11 20:30:58
 categories:
-- js库
+- 【JS库】
 - jQuery+SUI
 ---
 

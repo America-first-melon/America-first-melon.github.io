@@ -2,7 +2,7 @@
 title: 转载一个[移动端上传头像]
 date: 2017-02-27 16:32:28
 categories:
-- js插件
+- 【JS插件】
 - uploadImg
 ---
 

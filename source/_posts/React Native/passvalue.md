@@ -2,7 +2,7 @@
 title: 组件传值
 date: 2016-12-28 14:26:21
 categories:
-- React Native
+- 【React Native】
 - 组件传值
 ---
 
