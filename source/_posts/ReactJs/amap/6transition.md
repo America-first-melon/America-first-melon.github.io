@@ -12,23 +12,55 @@ categories:
 
 package.json : "react-transition-group": "^1.2.1"
 
+上代码，主页：
 
+```html
+import React , {Component} from 'react';
 
-公众号获取授权，这里面采用了中间跳转的方式。
+import {
+    BrowserRouter as Router,
+    Route,
+} from 'react-router-dom';
 
-首先公众号菜单点击，返回一个带跳转的链接，链接跳到一个temp.html里面，在这里面请求验证授权，成功之后带着参数跳转至业务网址上面。
+import { CSSTransitionGroup } from 'react-transition-group'
 
+import Mine from '../../layouts/mine/index';
+import Detail from '../../layouts/mine/detail';
+import MapMarker from '../../layouts/mine/mapMarker';
+import Ques from '../../layouts/question/index';
+import Sample from '../../layouts/sample/sample';
+import AccessMapDetail from '../../layouts/access/index';
+import AccessInformation from '../../layouts/access/information';
 
-发现一个问题，
+export default class App extends Component{
+    render(){
+        return(
+            <Router>
+                <Route render={({ location }) => (
+                    <div className="fill">
+                        <Route exact path="/" component={Mine}/>
+                        <CSSTransitionGroup
+                            transitionName="fade"
+                            transitionEnterTimeout={300}
+                            transitionLeaveTimeout={300}
+                        >
+                            <div key={location.pathname}>
+                                <Route location={location} path='/question' component={Ques} />
+                                <Route location={location} path="/access/informaton" component={AccessInformation} />
+                                <Route location={location} path="/sample" component={Sample} />
+                            </div>
+                        </CSSTransitionGroup>
+                        <Route location={location} path="/detail" component={Detail} />
+                        <Route location={location} path="/mapMarker" component={MapMarker} />
+                        <Route location={location} path="/access/mapdetail" component={AccessMapDetail} />
+                   </div>
+              )}/>
+         </Router>
+        )
+    }
+}
 
-temp.html 用jquery的$.ajax请求在ios手机上不能正常发送请求，需要用原生的XMLHTTPREQUEST进行请求。[不知道是什么原因。。]
-
-
-还有一个问题：
-
-如图：![](/assets/rj/18.png)
-
-问题原因：用户用户名带有特殊字符如图标，需要后台验证的时候替换一下。。
+```
 
 
 
