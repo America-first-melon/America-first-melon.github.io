@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>webuploader | 周大侠ˇ</title>
+  <meta name="author" content="Carmelo Anthony">
+  
+  <meta name="description" content="niuniuniuniu">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="webuploader"/>
+  <meta property="og:site_name" content="周大侠ˇ"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="周大侠ˇ" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/default/avatar.png">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">周大侠ˇ</a></h1>
+		    <h2><a href="/">落霞与孤鹜齐飞ˇˇ， 秋水共长天一色。 渔舟唱晚， 响穷彭蠡之滨； 雁阵惊寒， 声断衡阳之浦。</a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>首页</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>归档</a>
+		    		
+		    		  <a href="/hexo"><i class="fa fa-book"></i>电子书</a>
+		    		
+		    		  <a href="/resume"><i class="fa fa-user"></i>关于我</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		      <a href="/atom.xml"><i class="fa fa-rss"></i>订阅</a>
+		    
+		      <a href="/customization"><i class="fa fa-question-circle"></i>留言</a>
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-02-24T11:58:33.000Z"><a href="/2017/02/24/js插件/webuploader/upload/">2017-02-24</a></time>
+        
+  
+    <h1 class="title">webuploader</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#图片"><span class="toc-text">图片</span></a></li></ol>
+    </div>
+
+        <h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line">1.</div><div class="line">&lt;a href=<span class="string">"javascript:;"</span> id=<span class="string">"picker"</span>&gt;选择文件</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/gif,image/jpeg,image/jpg,image/png"</span> /&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">"&lt;?php echo isset(<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]) &amp;&amp; <span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]?<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]:'';?&gt;"</span> id=<span class="string">"logo"</span>&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">"&lt;?php echo isset(<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]) &amp;&amp; <span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]?<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]:0;?&gt;"</span> id=<span class="string">"id"</span>&gt;</div><div class="line">&lt;/a&gt;</div><div class="line">2.</div><div class="line">&lt;div class=<span class="string">"form-item"</span>&gt;</div><div class="line">     &lt;div class=<span class="string">"form-title"</span>&gt;&lt;b class=<span class="string">"must-input"</span>&gt;*&amp;nbsp;&lt;/b&gt;封&amp;nbsp;面&amp;nbsp;图&amp;nbsp;：&lt;/div&gt;</div><div class="line">     &lt;a href=<span class="string">"javascript:;"</span> class=<span class="string">"uploadButton"</span> id=<span class="string">"picker"</span>&gt;选择文件</div><div class="line">          &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/gif,image/jpeg,image/jpg,image/png"</span> /&gt;</div><div class="line">     &lt;/a&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">""</span> id=<span class="string">"icon_path"</span>&gt;</div><div class="line">     &lt;div id=<span class="string">"preview"</span> style=<span class="string">"margin:0 0 15px 100px;"</span> class=<span class="string">"none"</span>&gt;</div><div class="line">          &lt;img src=<span class="string">""</span>&gt;</div><div class="line">          &lt;p class=<span class="string">"info"</span> style=<span class="string">"color:red;line-height:25px;"</span>&gt;&lt;/p&gt;</div><div class="line">     &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">//</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"...webuploader.js"</span>&gt;&lt;/script&gt;</div><div class="line">//</div><div class="line">&lt;script&gt;</div><div class="line">     /* 文件上传*/</div><div class="line">     var uploader = WebUploader.create(&#123;</div><div class="line">          auto: <span class="literal">true</span>,</div><div class="line">          // swf文件路径</div><div class="line">          //swf: <span class="string">'Uploader.swf'</span>,</div><div class="line">          // 文件接收服务端。</div><div class="line">          server: <span class="string">'url'</span>,</div><div class="line">          // 选择文件的按钮。可选。</div><div class="line">          // 内部根据当前运行是创建，可能是input元素，也可能是flash.</div><div class="line">          pick: <span class="string">'#picker'</span>,</div><div class="line">               accept: &#123;</div><div class="line">                    title: <span class="string">'Images'</span>,</div><div class="line">                    extensions: <span class="string">'gif,jpg,jpeg,bmp,png'</span>,</div><div class="line">                    mimeTypes: <span class="string">'image/jpg,image/jpeg,image/png'</span></div><div class="line">          &#125;</div><div class="line">     &#125;);  </div><div class="line">     uploader.on( <span class="string">'fileQueued'</span>, <span class="keyword">function</span>( file ) &#123;</div><div class="line">          <span class="variable">$img</span> = $(<span class="string">".my-infomation-intro"</span>).find(<span class="string">'img'</span>);          //图片位置</div><div class="line">          // thumbnailWidth x thumbnailHeight 为 100 x 100</div><div class="line">          uploader.makeThumb( file, <span class="keyword">function</span>( error, src ) &#123;</div><div class="line">               <span class="keyword">if</span> ( error ) &#123;</div><div class="line">                    <span class="variable">$img</span>.replaceWith(<span class="string">'&lt;span&gt;不能预览&lt;/span&gt;'</span>);</div><div class="line">                    <span class="built_in">return</span>;</div><div class="line">               &#125;</div><div class="line">               <span class="variable">$img</span>.attr( <span class="string">'src'</span>, src );</div><div class="line">               /*$(<span class="string">"#preview"</span>).show();*/</div><div class="line">          &#125;, 150, 150 );</div><div class="line">     &#125;);</div><div class="line">     // 文件上传成功，给item添加成功class, 用样式标记上传成功。</div><div class="line">     uploader.on( <span class="string">'uploadSuccess'</span>, <span class="keyword">function</span>( file,response ) &#123;</div><div class="line">          var img_url = response.data.url;</div><div class="line">          $(<span class="string">'#logo'</span>).val(img_url);</div><div class="line">          /*$(<span class="string">'#icon_path'</span>).val(img_url);*/</div><div class="line">          /*$(<span class="string">".info"</span>).text(<span class="string">"上传成功"</span>);*/</div><div class="line">     &#125;);</div><div class="line">     // 文件上传失败，显示上传出错。</div><div class="line">     uploader.on( <span class="string">'uploadError'</span>, <span class="keyword">function</span>( file ) &#123;</div><div class="line">          /*$(<span class="string">".info"</span>).text(<span class="string">"上传失败"</span>);*/</div><div class="line">     &#125;);</div><div class="line">     //</div><div class="line">     $.ajax( &#123;</div><div class="line">          url:<span class="string">'url'</span>,</div><div class="line">          data:&#123;</div><div class="line">               data</div><div class="line">               &#125;,</div><div class="line">          <span class="built_in">type</span>:<span class="string">'post'</span>,</div><div class="line">          dataType:<span class="string">'json'</span>,</div><div class="line">          success:<span class="keyword">function</span>(result) &#123;</div><div class="line">               //code</div><div class="line">          &#125;,</div><div class="line">          error : <span class="keyword">function</span>(error) &#123;</div><div class="line">               console.log(error);</div><div class="line">          &#125;</div><div class="line">     &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p><img src="/assets/qita/12.png" alt=""><br><img src="/assets/qita/13.png" alt=""><br><img src="/assets/qita/15.png" alt=""></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/js插件/">js插件</a>, <a href="/categories/js插件/webuploader-js/">webuploader.js</a>
+  </div>
+
+        
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+                <div id="null"></div>
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">留言</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2017/02/24/js插件/webuploader/upload/" data-title="webuploader" data-url="http://yoursite.com/2017/02/24/js插件/webuploader/upload/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"lupeng-test"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">分类</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/Git初级知识/">Git初级知识</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/">React Native</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/MAC常见运行错误/">MAC常见运行错误</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/RN的文字缩进/">RN的文字缩进</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/Warning-setState-Can-only-update-a-mounted-or-mounting-component/">Warning setState(...) Can only update a mounted or mounting component]...</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/XMLHttpRequest的一种使用/">XMLHttpRequest的一种使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/react-native-video-Android-获取视频总时长/">react-native-video Android 获取视频总时长</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/tab-navigator/">tab-navigator</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/一种首页路由/">一种首页路由</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/类SegmentedControlIOS/">类SegmentedControlIOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/组件传值/">组件传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-Native/设置像素/">设置像素</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/">React.js</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/AMap公众号/">AMap公众号</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/canvas小项目/">canvas小项目</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/基础复习/">基础复习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/案例上传到Github/">案例上传到Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React-js/通用Fetch/">通用Fetch</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/">js库</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js库/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/">js插件</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/checkbox-city多选器/">checkbox+city多选器</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/uploadImg/">uploadImg</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/webuploader-js/">webuploader.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/插件集合/">插件集合</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/js插件/阿里云视频点播web端/">阿里云视频点播web端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue-js/">vue.js</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/vue-js/scoped-动态class-动态style-app交互/">scoped/动态class/动态style/app交互</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue-js/vue组件互相传值/">vue组件互相传值</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/兼容性/">兼容性</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/兼容性/CSS3动画在手机浏览器-微信浏览器不显示/">CSS3动画在手机浏览器/微信浏览器不显示</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/兼容性/IE8下的RGBA/">IE8下的RGBA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/兼容性/IE8下的innerHTML兼容问题/">IE8下的innerHTML兼容问题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/兼容性/IE下的nextElement/">IE下的nextElement</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/">小程序</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/小程序的代码/">小程序的代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/根据json返回个几分钟前/">根据json返回个几分钟前</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/">常用总结</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/60s倒计时-毫秒计时-千位级毫秒计时/">60s倒计时 || 毫秒计时 || 千位级毫秒计时</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/cookies/">cookies</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/splice应用/">splice应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/substring应用/">substring应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/timeStamp应用/">timeStamp应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/unicode编码转换/">unicode编码转换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/xmlHttpRequest-ajax封装-nginx代理跨域-常见错误码/">xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/后续分离/">后续分离</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/常用总结/睡眠排序/">睡眠排序</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/">框架+库</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/框架-库/源代码/">源代码</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/移动端/">移动端</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/移动端/另一个版本的media查询/">另一个版本的media查询</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/规范/">规范</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/规范/jq书写规范/">jq书写规范</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/规范/前端书写规范/">前端书写规范</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/调试/">调试</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/调试/手机端调试网页/">手机端调试网页</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试/">面试</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/面试/面试题总结/">面试题总结</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/">页面效果</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/CSS实现的3D按钮-X按钮/">CSS实现的3D按钮 + X按钮</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/css磨皮效果/">css磨皮效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/transition应用/">transition应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/二级选项/">二级选项</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/原生JS简易轮播/">原生JS简易轮播</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/呼吸灯/">呼吸灯</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/导航条随屏幕滚动至一定距离后fixed/">导航条随屏幕滚动至一定距离后fixed</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/滚动播报/">滚动播报</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/简单图片爆炸效果/">简单图片爆炸效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/背景色平滑变换/">背景色平滑变换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/选集/">选集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/页面效果/链接平滑滚动到锚点/">链接平滑滚动到锚点</a><span class="category-list-count">1</span></li></ul></li></ul> 
+</div>
+ 
+
+
+  <div class="widget tag">
+  <h3 class="title">日历云</h3>
+  <div id="calendar"></div>
+</div>
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"lupeng-test"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">37</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2017 Carmelo Anthony
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:undefined, root:'calendar'});
+    
+    });
+  </script>
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<!--<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>-->
+
+<!-- 百度推荐 -->
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?9acf0cedd48dc53be256ede5a98c2aaa";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<!-- <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script> -->
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>
