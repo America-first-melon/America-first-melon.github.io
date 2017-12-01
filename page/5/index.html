@@ -84,92 +84,10 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-12-15T02:47:10.000Z"><a href="/2016/12/15/页面效果/fixed/">2016-12-15</a></time>
+        <time datetime="2017-02-27T06:29:20.000Z"><a href="/2017/02/27/React Native/over/">2017-02-27</a></time>
         
   
-    <h1 class="title"><a href="/2016/12/15/页面效果/fixed/">导航条随屏幕滚动,一定距离后fixed</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>导航条随屏幕滚动,一定距离后fixed</p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/12/15/页面效果/fixed/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/12/15/页面效果/fixed/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-12-11T15:18:39.000Z"><a href="/2016/12/11/ReactJs/blog/">2016-12-11</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/12/11/ReactJs/blog/">react.js案例上传到Github</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h4><p>github 搭建 一个 用username.github.io 的 博客。。。</p>
-<p>[我用的是HEXO。方法百度]</p>
-<p>这里简述一下上传React.js案例的过程。。。</p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/12/11/ReactJs/blog/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2016/12/11/ReactJs/blog/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2016-12-02T09:38:55.000Z"><a href="/2016/12/02/常用总结/timeStamp/">2016-12-02</a></time>
-        
-  
-    <h1 class="title"><a href="/2016/12/02/常用总结/timeStamp/">时间戳创建</a></h1>
+    <h1 class="title"><a href="/2017/02/27/React Native/over/">源代码</a></h1>
   
 
     </header>
@@ -178,10 +96,10 @@
       
         
     <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建："><span class="toc-text">创建：</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#没啦"><span class="toc-text">没啦</span></a></li></ol>
     </div>
 
-        <h3 id="创建："><a href="#创建：" class="headerlink" title="创建："></a>创建：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var timeStamp = Date.parse(new Date())/1000;</div><div class="line">$(<span class="string">'.page'</span>).attr(<span class="string">'id'</span>,_id+<span class="string">'=?'</span>+timeStamp);</div></pre></td></tr></table></figure>
+        <h4 id="没啦"><a href="#没啦" class="headerlink" title="没啦"></a>没啦</h4><p>先写这些，代码<a href="http://pan.baidu.com/disk/home#list/path=%2F&amp;vmode=list" target="_blank" rel="external">留存</a></p>
 
       
     </div>
@@ -190,7 +108,7 @@
         
         
         <div class="alignright">
-          <a href="/2016/12/02/常用总结/timeStamp/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/27/React Native/over/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -208,29 +126,31 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-12-02T09:30:20.000Z"><a href="/2016/12/02/js库/jquery+l7/serach/">2016-12-02</a></time>
+        <time datetime="2017-02-25T09:22:58.000Z"><a href="/2017/02/25/React Native/video/">2017-02-25</a></time>
         
   
-    <h1 class="title"><a href="/2016/12/02/js库/jquery+l7/serach/">搜索功能</a></h1>
+    <h1 class="title"><a href="/2017/02/25/React Native/video/">react-native-video Android 获取视频总时长</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/assets/l7/4.gif" alt=""></p>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>在 npm install 之后, 在Android上面,只能获取到currentTime 和 缓存的Time,并没有包含总时长。<br>这样写进度条就不行了。</p>
+<p>在IOS上开发详见：<a href="http://coding.imooc.com/learn/questiondetail/2076.html" target="_blank" rel="external">http://coding.imooc.com/learn/questiondetail/2076.html</a>;</p>
+<p>在Android上开发需要修改： \node_modules\react-native-video\android\src\main\java\com\brentvatne\react\ReactVideoView.java</p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/12/02/js库/jquery+l7/serach/#more" class="more-link">Read More</a>
+            <a href="/2017/02/25/React Native/video/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/12/02/js库/jquery+l7/serach/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/25/React Native/video/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -248,29 +168,29 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-12-02T09:19:45.000Z"><a href="/2016/12/02/页面效果/transition/">2016-12-02</a></time>
+        <time datetime="2017-02-25T06:31:29.000Z"><a href="/2017/02/25/React Native/tab/">2017-02-25</a></time>
         
   
-    <h1 class="title"><a href="/2016/12/02/页面效果/transition/">平滑显示transition</a></h1>
+    <h1 class="title"><a href="/2017/02/25/React Native/tab/">tab-navigator</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h4 id="效果如图："><a href="#效果如图：" class="headerlink" title="效果如图："></a>效果如图：</h4><p><img src="/assets/xiaoguo/1.gif" alt=""></p>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><strong>option只是传入的一个数组，而contentVIew是个组件,所以可以这样写标签 <options.contentview> </options.contentview></strong></p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/12/02/页面效果/transition/#more" class="more-link">Read More</a>
+            <a href="/2017/02/25/React Native/tab/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/12/02/页面效果/transition/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/25/React Native/tab/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -288,29 +208,32 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-12-02T06:40:39.000Z"><a href="/2016/12/02/js库/jquery/jqImgUpload/">2016-12-02</a></time>
+        <time datetime="2017-02-24T11:58:33.000Z"><a href="/2017/02/24/js插件/webuploader/upload/">2017-02-24</a></time>
         
   
-    <h1 class="title"><a href="/2016/12/02/js库/jquery/jqImgUpload/">jq的图片上传预览实现</a></h1>
+    <h1 class="title"><a href="/2017/02/24/js插件/webuploader/upload/">webuploader</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="图片的上传预览效果："><a href="#图片的上传预览效果：" class="headerlink" title="图片的上传预览效果："></a>图片的上传预览效果：</h3><p><img src="/assets/js/jquery/1.gif" alt=""></p>
+        
+    <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#图片"><span class="toc-text">图片</span></a></li></ol>
+    </div>
+
+        <h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line">1.</div><div class="line">&lt;a href=<span class="string">"javascript:;"</span> id=<span class="string">"picker"</span>&gt;选择文件</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/gif,image/jpeg,image/jpg,image/png"</span> /&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">"&lt;?php echo isset(<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]) &amp;&amp; <span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]?<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>logo<span class="string">"]:'';?&gt;"</span> id=<span class="string">"logo"</span>&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">"&lt;?php echo isset(<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]) &amp;&amp; <span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]?<span class="variable">$this</span>-&gt;user["</span>workshop<span class="string">"]["</span>id<span class="string">"]:0;?&gt;"</span> id=<span class="string">"id"</span>&gt;</div><div class="line">&lt;/a&gt;</div><div class="line">2.</div><div class="line">&lt;div class=<span class="string">"form-item"</span>&gt;</div><div class="line">     &lt;div class=<span class="string">"form-title"</span>&gt;&lt;b class=<span class="string">"must-input"</span>&gt;*&amp;nbsp;&lt;/b&gt;封&amp;nbsp;面&amp;nbsp;图&amp;nbsp;：&lt;/div&gt;</div><div class="line">     &lt;a href=<span class="string">"javascript:;"</span> class=<span class="string">"uploadButton"</span> id=<span class="string">"picker"</span>&gt;选择文件</div><div class="line">          &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/gif,image/jpeg,image/jpg,image/png"</span> /&gt;</div><div class="line">     &lt;/a&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> value=<span class="string">""</span> id=<span class="string">"icon_path"</span>&gt;</div><div class="line">     &lt;div id=<span class="string">"preview"</span> style=<span class="string">"margin:0 0 15px 100px;"</span> class=<span class="string">"none"</span>&gt;</div><div class="line">          &lt;img src=<span class="string">""</span>&gt;</div><div class="line">          &lt;p class=<span class="string">"info"</span> style=<span class="string">"color:red;line-height:25px;"</span>&gt;&lt;/p&gt;</div><div class="line">     &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">//</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"...webuploader.js"</span>&gt;&lt;/script&gt;</div><div class="line">//</div><div class="line">&lt;script&gt;</div><div class="line">     /* 文件上传*/</div><div class="line">     var uploader = WebUploader.create(&#123;</div><div class="line">          auto: <span class="literal">true</span>,</div><div class="line">          // swf文件路径</div><div class="line">          //swf: <span class="string">'Uploader.swf'</span>,</div><div class="line">          // 文件接收服务端。</div><div class="line">          server: <span class="string">'url'</span>,</div><div class="line">          // 选择文件的按钮。可选。</div><div class="line">          // 内部根据当前运行是创建，可能是input元素，也可能是flash.</div><div class="line">          pick: <span class="string">'#picker'</span>,</div><div class="line">               accept: &#123;</div><div class="line">                    title: <span class="string">'Images'</span>,</div><div class="line">                    extensions: <span class="string">'gif,jpg,jpeg,bmp,png'</span>,</div><div class="line">                    mimeTypes: <span class="string">'image/jpg,image/jpeg,image/png'</span></div><div class="line">          &#125;</div><div class="line">     &#125;);  </div><div class="line">     uploader.on( <span class="string">'fileQueued'</span>, <span class="keyword">function</span>( file ) &#123;</div><div class="line">          <span class="variable">$img</span> = $(<span class="string">".my-infomation-intro"</span>).find(<span class="string">'img'</span>);          //图片位置</div><div class="line">          // thumbnailWidth x thumbnailHeight 为 100 x 100</div><div class="line">          uploader.makeThumb( file, <span class="keyword">function</span>( error, src ) &#123;</div><div class="line">               <span class="keyword">if</span> ( error ) &#123;</div><div class="line">                    <span class="variable">$img</span>.replaceWith(<span class="string">'&lt;span&gt;不能预览&lt;/span&gt;'</span>);</div><div class="line">                    <span class="built_in">return</span>;</div><div class="line">               &#125;</div><div class="line">               <span class="variable">$img</span>.attr( <span class="string">'src'</span>, src );</div><div class="line">               /*$(<span class="string">"#preview"</span>).show();*/</div><div class="line">          &#125;, 150, 150 );</div><div class="line">     &#125;);</div><div class="line">     // 文件上传成功，给item添加成功class, 用样式标记上传成功。</div><div class="line">     uploader.on( <span class="string">'uploadSuccess'</span>, <span class="keyword">function</span>( file,response ) &#123;</div><div class="line">          var img_url = response.data.url;</div><div class="line">          $(<span class="string">'#logo'</span>).val(img_url);</div><div class="line">          /*$(<span class="string">'#icon_path'</span>).val(img_url);*/</div><div class="line">          /*$(<span class="string">".info"</span>).text(<span class="string">"上传成功"</span>);*/</div><div class="line">     &#125;);</div><div class="line">     // 文件上传失败，显示上传出错。</div><div class="line">     uploader.on( <span class="string">'uploadError'</span>, <span class="keyword">function</span>( file ) &#123;</div><div class="line">          /*$(<span class="string">".info"</span>).text(<span class="string">"上传失败"</span>);*/</div><div class="line">     &#125;);</div><div class="line">     //</div><div class="line">     $.ajax( &#123;</div><div class="line">          url:<span class="string">'url'</span>,</div><div class="line">          data:&#123;</div><div class="line">               data</div><div class="line">               &#125;,</div><div class="line">          <span class="built_in">type</span>:<span class="string">'post'</span>,</div><div class="line">          dataType:<span class="string">'json'</span>,</div><div class="line">          success:<span class="keyword">function</span>(result) &#123;</div><div class="line">               //code</div><div class="line">          &#125;,</div><div class="line">          error : <span class="keyword">function</span>(error) &#123;</div><div class="line">               console.log(error);</div><div class="line">          &#125;</div><div class="line">     &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p><img src="/assets/qita/12.png" alt=""><br><img src="/assets/qita/13.png" alt=""><br><img src="/assets/qita/15.png" alt=""></p>
+
       
     </div>
     <footer>
       
         
-          <div class="alignleft">
-            <a href="/2016/12/02/js库/jquery/jqImgUpload/#more" class="more-link">Read More</a>
-          </div>
-        
         
         <div class="alignright">
-          <a href="/2016/12/02/js库/jquery/jqImgUpload/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/24/js插件/webuploader/upload/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -328,30 +251,30 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-12-02T05:41:12.000Z"><a href="/2016/12/02/js库/jquery/imgcomplete/">2016-12-02</a></time>
+        <time datetime="2017-02-22T05:01:00.000Z"><a href="/2017/02/22/React Native/indent/">2017-02-22</a></time>
         
   
-    <h1 class="title"><a href="/2016/12/02/js库/jquery/imgcomplete/">jq-img的complete事件</a></h1>
+    <h1 class="title"><a href="/2017/02/22/React Native/indent/">RN的文字缩进</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>遍历图片的方法：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"content-padded no-mar book-list"</span>&gt;</div><div class="line">        &lt;?php foreach(<span class="variable">$new_books</span>[<span class="string">"data"</span>] as <span class="variable">$val</span>):?&gt;</div><div class="line">            &lt;div class=<span class="string">"card no-boxshadow no-mar"</span> style=<span class="string">"width:33%;border-bottom:1px solid #e6e6e6;float:left;"</span> onclick=<span class="string">"Frjj.book_url('&lt;?php echo <span class="variable">$val</span>["</span>book_url<span class="string">"];?&gt;',&lt;?php echo <span class="variable">$val</span>["</span>id<span class="string">"];?&gt;)"</span>&gt;</div><div class="line">                &lt;div class=<span class="string">"item-media"</span> align=<span class="string">"center"</span>&gt;</div><div class="line">                    &lt;img src=<span class="string">"&lt;?php echo Tools::get_upload_url(<span class="variable">$val</span>["</span>book_img<span class="string">"]);?&gt;"</span> width=<span class="string">"100%"</span>/&gt;</div><div class="line">                &lt;/div&gt;</div><div class="line">                &lt;div class=<span class="string">"card-content-inner no-pad book-info"</span>&gt;</div><div class="line">                    &lt;h6 class=<span class="string">"book-title"</span>&gt;&lt;?php <span class="built_in">echo</span> <span class="variable">$val</span>[<span class="string">"book_name"</span>];?&gt;&lt;/h6&gt;</div><div class="line">                    &lt;h6 class=<span class="string">"book-autor color-gray"</span>&gt;&lt;?php <span class="built_in">echo</span> <span class="variable">$val</span>[<span class="string">"book_author"</span>];?&gt;&lt;/h6&gt;</div><div class="line">                    &lt;h6 class=<span class="string">"color-price"</span>&gt;￥&lt;?php <span class="built_in">echo</span> <span class="variable">$val</span>[<span class="string">"price"</span>];?&gt;&lt;/h6&gt;</div><div class="line">                &lt;/div&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;?php endforeach;?&gt;</div><div class="line">    &lt;/div&gt;</div></pre></td></tr></table></figure>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><code>text-indent</code> : 这个在RN中是没有的。</p>
+<p>用这个<code>{&#39;t&#39;}</code>可以模拟缩进</p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/12/02/js库/jquery/imgcomplete/#more" class="more-link">Read More</a>
+            <a href="/2017/02/22/React Native/indent/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/12/02/js库/jquery/imgcomplete/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/22/React Native/indent/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -369,29 +292,31 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-11-25T06:45:29.000Z"><a href="/2016/11/25/js库/jquery+l7/hide/">2016-11-25</a></time>
+        <time datetime="2017-02-21T12:48:11.000Z"><a href="/2017/02/21/js插件/checkbox+city/duoxuan/">2017-02-21</a></time>
         
   
-    <h1 class="title"><a href="/2016/11/25/js库/jquery+l7/hide/">点击空白处隐藏</a></h1>
+    <h1 class="title"><a href="/2017/02/21/js插件/checkbox+city/duoxuan/">省市级多选+checkbox多选+幼小初高多选</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/assets/l7/2.gif" alt=""></p>
+        <h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>用到的插件地址：</p>
+<p><a href="http://www.jqueryfuns.com/resource/2035" target="_blank" rel="external">jquery城市选择器</a></p>
+<p><a href="http://sc.chinaz.com/jiaoben/160920467510.htm" target="_blank" rel="external">jquery三级联动菜单</a></p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/11/25/js库/jquery+l7/hide/#more" class="more-link">Read More</a>
+            <a href="/2017/02/21/js插件/checkbox+city/duoxuan/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/11/25/js库/jquery+l7/hide/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/21/js插件/checkbox+city/duoxuan/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -409,29 +334,30 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-11-25T06:22:54.000Z"><a href="/2016/11/25/js库/jquery+l7/twice/">2016-11-25</a></time>
+        <time datetime="2017-02-20T06:40:55.000Z"><a href="/2017/02/20/React Native/XMLHttpRequest/">2017-02-20</a></time>
         
   
-    <h1 class="title"><a href="/2016/11/25/js库/jquery+l7/twice/">label&gt;input结构触发两次</a></h1>
+    <h1 class="title"><a href="/2017/02/20/React Native/XMLHttpRequest/">XMLHttpRequest</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="框架结构"><a href="#框架结构" class="headerlink" title="框架结构"></a>框架结构</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;label class=<span class="string">"label-checkbox item-content new-add"</span>&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"action"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"item-media"</span>&gt;</div><div class="line">        &lt;i class=<span class="string">"icon icon-form-checkbox"</span>&gt;&lt;/i&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item-inner item-inner-pad"</span>&gt;</div><div class="line">        &lt;div class=<span class="string">"item-title color-333"</span>&gt;新增&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/label&gt;</div><div class="line">&lt;label class=<span class="string">"label-checkbox item-content connect"</span>&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"action"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"item-media"</span>&gt;</div><div class="line">        &lt;i class=<span class="string">"icon icon-form-checkbox"</span>&gt;&lt;/i&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item-inner item-inner-pad"</span>&gt;</div><div class="line">        &lt;div class=<span class="string">"item-title color-333"</span>&gt;关联&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/label&gt;</div></pre></td></tr></table></figure>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>XMLHttpRequest 对象用于在后台与服务器交换数据。</p>
+<p><img src="/assets/rn/2.png" alt=""></p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/11/25/js库/jquery+l7/twice/#more" class="more-link">Read More</a>
+            <a href="/2017/02/20/React Native/XMLHttpRequest/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/11/25/js库/jquery+l7/twice/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/20/React Native/XMLHttpRequest/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -449,29 +375,110 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-11-25T05:46:12.000Z"><a href="/2016/11/25/js库/jquery+l7/verify/">2016-11-25</a></time>
+        <time datetime="2017-02-10T06:31:10.000Z"><a href="/2017/02/10/React Native/waring/">2017-02-10</a></time>
         
   
-    <h1 class="title"><a href="/2016/11/25/js库/jquery+l7/verify/">jq如何即时验证输入框内容变化？</a></h1>
+    <h1 class="title"><a href="/2017/02/10/React Native/waring/">Warning setState(...) Can only update a mounted or mounting component]...</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/assets/l7/3.gif" alt=""></p>
+        <h4 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h4><p>Warning: setState(…): Can only update a mounted or mounting component.</p>
+<p><img src="/assets/rn/1.png" alt=""></p>
       
     </div>
     <footer>
       
         
           <div class="alignleft">
-            <a href="/2016/11/25/js库/jquery+l7/verify/#more" class="more-link">Read More</a>
+            <a href="/2017/02/10/React Native/waring/#more" class="more-link">Read More</a>
           </div>
         
         
         <div class="alignright">
-          <a href="/2016/11/25/js库/jquery+l7/verify/#comment" class="comment-link">Comments</a>
+          <a href="/2017/02/10/React Native/waring/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-01-15T04:58:10.000Z"><a href="/2017/01/15/React Native/px/">2017-01-15</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/01/15/React Native/px/">设置像素</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/01/15/React Native/px/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/01/15/React Native/px/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-01-08T02:50:18.000Z"><a href="/2017/01/08/页面效果/boom/">2017-01-08</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/01/08/页面效果/boom/">简单图片爆炸效果</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="页面效果"><a href="#页面效果" class="headerlink" title="页面效果"></a>页面效果</h4><p><img src="/assets/xiaoguo/11.gif" alt=""></p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/01/08/页面效果/boom/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/01/08/页面效果/boom/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -497,7 +504,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/">【Git】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/Git初级知识/">Git初级知识</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/">【JS库】</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/">【JS插件】</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/checkbox-city多选器/">checkbox+city多选器</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/uploadImg/">uploadImg</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/webuploader-js/">webuploader.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/插件集合/">插件集合</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/阿里云视频点播web端/">阿里云视频点播web端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/">【React Native】</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/MAC常见运行错误/">MAC常见运行错误</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/RN的文字缩进/">RN的文字缩进</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/Warning-setState-Can-only-update-a-mounted-or-mounting-component/">Warning setState(...) Can only update a mounted or mounting component]...</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/XMLHttpRequest的一种使用/">XMLHttpRequest的一种使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/react-native-video-Android-获取视频总时长/">react-native-video Android 获取视频总时长</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/tab-navigator/">tab-navigator</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/一种首页路由/">一种首页路由</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/源代码/">源代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/类SegmentedControlIOS/">类SegmentedControlIOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/组件传值/">组件传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/设置像素/">设置像素</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/">【React.js】</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/AMap公众号/">AMap公众号</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/canvas小项目/">canvas小项目</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/基础复习/">基础复习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/案例上传到Github/">案例上传到Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/通用Fetch/">通用Fetch</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/">【VUE】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/scoped-动态class-动态style-app交互/">scoped/动态class/动态style/app交互</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/vue组件互相传值/">vue组件互相传值</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/">【兼容性】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/CSS3动画在手机浏览器-微信浏览器不显示/">CSS3动画在手机浏览器/微信浏览器不显示</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的RGBA/">IE8下的RGBA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的innerHTML兼容问题/">IE8下的innerHTML兼容问题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE下的nextElement/">IE下的nextElement</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/">【小程序】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/小程序的代码/">小程序的代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/根据json返回个几分钟前/">根据json返回个几分钟前</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/">【常用总结】</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/60s倒计时-毫秒计时-千位级毫秒计时/">60s倒计时 || 毫秒计时 || 千位级毫秒计时</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/cookies/">cookies</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/splice应用/">splice应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/substring应用/">substring应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/timeStamp应用/">timeStamp应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/unicode编码转换/">unicode编码转换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/xmlHttpRequest-ajax封装-nginx代理跨域-常见错误码/">xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/后续分离/">后续分离</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/睡眠排序/">睡眠排序</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/">【移动端】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/另一个版本的media查询/">另一个版本的media查询</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/">【规范】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/jq书写规范/">jq书写规范</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/前端书写规范/">前端书写规范</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/">【调试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/手机端调试网页/">手机端调试网页</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/">【面试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/面试题总结/">面试题总结</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/">【页面效果】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/CSS实现的3D按钮-X按钮/">CSS实现的3D按钮 + X按钮</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/css磨皮效果/">css磨皮效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/transition应用/">transition应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/二级选项/">二级选项</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/原生JS简易轮播/">原生JS简易轮播</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/呼吸灯/">呼吸灯</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/导航条随屏幕滚动至一定距离后fixed/">导航条随屏幕滚动至一定距离后fixed</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/滚动播报/">滚动播报</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/简单图片爆炸效果/">简单图片爆炸效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/背景色平滑变换/">背景色平滑变换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/选集/">选集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/链接平滑滚动到锚点/">链接平滑滚动到锚点</a><span class="category-list-count">1</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/">【ES6】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/扩展运算符/">...扩展运算符</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/class对象构造/">class对象构造</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/findIndex使用/">findIndex使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/map进阶使用/">map进阶使用</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/">【Git】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/Git初级知识/">Git初级知识</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/">【JS库】</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/">【JS插件】</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/checkbox-city多选器/">checkbox+city多选器</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/uploadImg/">uploadImg</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/webuploader-js/">webuploader.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/插件集合/">插件集合</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/阿里云视频点播web端/">阿里云视频点播web端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/">【React Native】</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/MAC常见运行错误/">MAC常见运行错误</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/RN的文字缩进/">RN的文字缩进</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/Warning-setState-Can-only-update-a-mounted-or-mounting-component/">Warning setState(...) Can only update a mounted or mounting component]...</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/XMLHttpRequest的一种使用/">XMLHttpRequest的一种使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/react-native-video-Android-获取视频总时长/">react-native-video Android 获取视频总时长</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/tab-navigator/">tab-navigator</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/一种首页路由/">一种首页路由</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/源代码/">源代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/类SegmentedControlIOS/">类SegmentedControlIOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/组件传值/">组件传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/设置像素/">设置像素</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/">【React.js】</a><span class="category-list-count">24</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/AMap公众号/">AMap公众号</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/canvas小项目/">canvas小项目</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/基础复习/">基础复习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/案例上传到Github/">案例上传到Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/通用Fetch/">通用Fetch</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/">【VUE】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/scoped-动态class-动态style-app交互/">scoped/动态class/动态style/app交互</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/vue组件互相传值/">vue组件互相传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/常用技巧/">常用技巧</a><span class="category-list-count">10</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/">【兼容性】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/CSS3动画在手机浏览器-微信浏览器不显示/">CSS3动画在手机浏览器/微信浏览器不显示</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的RGBA/">IE8下的RGBA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的innerHTML兼容问题/">IE8下的innerHTML兼容问题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE下的nextElement/">IE下的nextElement</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/">【小程序】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/小程序的代码/">小程序的代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/根据json返回个几分钟前/">根据json返回个几分钟前</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/">【常用总结】</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/60s倒计时-毫秒计时-千位级毫秒计时/">60s倒计时 || 毫秒计时 || 千位级毫秒计时</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/cookies/">cookies</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/splice应用/">splice应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/substring应用/">substring应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/timeStamp应用/">timeStamp应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/unicode编码转换/">unicode编码转换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/xmlHttpRequest-ajax封装-nginx代理跨域-常见错误码/">xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/后续分离/">后续分离</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/如何数组洗牌/">如何数组洗牌</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/睡眠排序/">睡眠排序</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/">【移动端】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/另一个版本的media查询/">另一个版本的media查询</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/">【规范】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/jq书写规范/">jq书写规范</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/前端书写规范/">前端书写规范</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/">【调试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/手机端调试网页/">手机端调试网页</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/">【面试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/面试题总结/">面试题总结</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/">【页面效果】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/CSS实现的3D按钮-X按钮/">CSS实现的3D按钮 + X按钮</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/css磨皮效果/">css磨皮效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/transition应用/">transition应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/二级选项/">二级选项</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/原生JS简易轮播/">原生JS简易轮播</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/呼吸灯/">呼吸灯</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/导航条随屏幕滚动至一定距离后fixed/">导航条随屏幕滚动至一定距离后fixed</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/滚动播报/">滚动播报</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/简单图片爆炸效果/">简单图片爆炸效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/背景色平滑变换/">背景色平滑变换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/选集/">选集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/链接平滑滚动到锚点/">链接平滑滚动到锚点</a><span class="category-list-count">1</span></li></ul></li></ul> 
 </div>
  
 
@@ -539,7 +546,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">37</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">53</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
   </div>
 
 </aside>

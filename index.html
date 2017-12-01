@@ -84,38 +84,29 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2017-11-01T14:15:26.000Z"><a href="/2017/11/01/ReactJs/amap/8wechat/">2017-11-01</a></time>
+        <time datetime="2017-11-01T14:15:26.000Z"><a href="/2017/11/01/ReactJs/amap/7wechat/">2017-11-01</a></time>
         
   
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/8wechat/">P8:wechat验证失败</a></h1>
+    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/7wechat/">P8:wechat验证失败</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>公众号获取授权，这里面采用了中间跳转的方式。</p>
-<p>首先公众号菜单点击，返回一个带跳转的链接，链接跳到一个temp.html里面，在这里面请求验证授权，成功之后带着参数跳转至业务网址上面。</p>
-<p>发现一个问题，</p>
-<p>temp.html 用jquery的$.ajax请求在ios手机上不能正常发送请求，需要用原生的XMLHTTPREQUEST进行请求。[不知道是什么原因。。]</p>
-<p>还有一个问题：</p>
-<p>如图：<img src="/assets/rj/18.png" alt=""></p>
-<p>问题原因：用户用户名带有特殊字符如图标，需要后台验证的时候替换一下。。</p>
-
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>公众号获取授权，这里面采用了中间跳转的方式。</p>
       
     </div>
     <footer>
       
         
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/7wechat/#more" class="more-link">Read More</a>
+          </div>
+        
         
         <div class="alignright">
-          <a href="/2017/11/01/ReactJs/amap/8wechat/#comment" class="comment-link">Comments</a>
+          <a href="/2017/11/01/ReactJs/amap/7wechat/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -133,34 +124,29 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2017-11-01T13:30:28.000Z"><a href="/2017/11/01/ReactJs/amap/6transition/">2017-11-01</a></time>
+        <time datetime="2017-11-01T13:30:29.000Z"><a href="/2017/11/01/ReactJs/amap/6weshare/">2017-11-01</a></time>
         
   
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/6transition/">P6:CSSTransitionGroup应用</a></h1>
+    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/6weshare/">P7:react微信分享组件</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#描述"><span class="toc-text">描述</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>package.json : “react-transition-group”: “^1.2.1”</p>
-<p>上代码，主页：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">import React , &#123;Component&#125; from 'react';</div><div class="line"></div><div class="line">import &#123;</div><div class="line">    BrowserRouter as Router,</div><div class="line">    Route,</div><div class="line">&#125; from 'react-router-dom';</div><div class="line"></div><div class="line">import &#123; CSSTransitionGroup &#125; from 'react-transition-group'</div><div class="line"></div><div class="line">import Mine from '../../layouts/mine/index';</div><div class="line">import Detail from '../../layouts/mine/detail';</div><div class="line">import MapMarker from '../../layouts/mine/mapMarker';</div><div class="line">import Ques from '../../layouts/question/index';</div><div class="line">import Sample from '../../layouts/sample/sample';</div><div class="line">import AccessMapDetail from '../../layouts/access/index';</div><div class="line">import AccessInformation from '../../layouts/access/information';</div><div class="line"></div><div class="line">export default class App extends Component&#123;</div><div class="line">    render()&#123;</div><div class="line">        return(</div><div class="line">            <span class="tag">&lt;<span class="name">Router</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">render</span>=<span class="string">&#123;(&#123;</span> <span class="attr">location</span> &#125;) =&gt;</span> (</div><div class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"fill"</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">Route</span> <span class="attr">exact</span> <span class="attr">path</span>=<span class="string">"/"</span> <span class="attr">component</span>=<span class="string">&#123;Mine&#125;/</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">CSSTransitionGroup</span></span></div><div class="line">                            <span class="attr">transitionName</span>=<span class="string">"fade"</span></div><div class="line">                            <span class="attr">transitionEnterTimeout</span>=<span class="string">&#123;300&#125;</span></div><div class="line">                            <span class="attr">transitionLeaveTimeout</span>=<span class="string">&#123;300&#125;</span></div><div class="line">                        &gt;</div><div class="line">                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">key</span>=<span class="string">&#123;location.pathname&#125;</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">'/question'</span> <span class="attr">component</span>=<span class="string">&#123;Ques&#125;</span> /&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">"/access/informaton"</span> <span class="attr">component</span>=<span class="string">&#123;AccessInformation&#125;</span> /&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">"/sample"</span> <span class="attr">component</span>=<span class="string">&#123;Sample&#125;</span> /&gt;</span></div><div class="line">                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">CSSTransitionGroup</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">"/detail"</span> <span class="attr">component</span>=<span class="string">&#123;Detail&#125;</span> /&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">"/mapMarker"</span> <span class="attr">component</span>=<span class="string">&#123;MapMarker&#125;</span> /&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">Route</span> <span class="attr">location</span>=<span class="string">&#123;location&#125;</span> <span class="attr">path</span>=<span class="string">"/access/mapdetail"</span> <span class="attr">component</span>=<span class="string">&#123;AccessMapDetail&#125;</span> /&gt;</span></div><div class="line">                   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">              )&#125;/&gt;</div><div class="line">         <span class="tag">&lt;/<span class="name">Router</span>&gt;</span></div><div class="line">        )</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
+        <h4 id="组件封装及使用"><a href="#组件封装及使用" class="headerlink" title="组件封装及使用"></a>组件封装及使用</h4>
       
     </div>
     <footer>
       
         
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/6weshare/#more" class="more-link">Read More</a>
+          </div>
+        
         
         <div class="alignright">
-          <a href="/2017/11/01/ReactJs/amap/6transition/#comment" class="comment-link">Comments</a>
+          <a href="/2017/11/01/ReactJs/amap/6weshare/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -178,10 +164,131 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2017-11-01T13:18:28.000Z"><a href="/2017/11/01/ReactJs/amap/5svg/">2017-11-01</a></time>
+        <time datetime="2017-11-01T13:30:28.000Z"><a href="/2017/11/01/ReactJs/amap/5transition/">2017-11-01</a></time>
         
   
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/5svg/">P5:react用SVG</a></h1>
+    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/5transition/">P6:CSSTransitionGroup应用</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>package.json : “react-transition-group”: “^1.2.1”</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/5transition/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/11/01/ReactJs/amap/5transition/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-11-01T13:18:32.000Z"><a href="/2017/11/01/ES6/findIndex/">2017-11-01</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/11/01/ES6/findIndex/">findIndex</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>findIndex 方法（数组）</p>
+<p>返回满足回调函数中指定的测试条件的第一个数组元素的索引值。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ES6/findIndex/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/11/01/ES6/findIndex/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-11-01T13:18:28.000Z"><a href="/2017/11/01/ReactJs/amap/4svg/">2017-11-01</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/4svg/">P4:react用SVG</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h4><p>例如</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/4svg/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/11/01/ReactJs/amap/4svg/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-11-01T13:18:28.000Z"><a href="/2017/11/01/ES6/class/">2017-11-01</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/11/01/ES6/class/">对象构造</a></h1>
   
 
     </header>
@@ -190,12 +297,14 @@
       
         
     <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#SVG"><span class="toc-text">SVG</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#构造"><span class="toc-text">构造</span></a></li></ol>
     </div>
 
-        <a id="more"></a>
-<h4 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h4><p>例如</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="built_in">export</span> const uploadIcon = () =&gt; (</div><div class="line">        &lt;svg t=<span class="string">"1508484489766"</span> viewBox=<span class="string">"0 0 1024 1024"</span> version=<span class="string">"1.1"</span> p-id=<span class="string">"4095"</span> width=<span class="string">"64"</span> height=<span class="string">"64"</span>&gt;</div><div class="line">        &lt;path d=<span class="string">"M959.516872 569.698097H572.223105v387.293767h-101.032045V569.698097H67.05879v-101.032045h404.13227V64.532759h101.032045v404.133293H959.516872v101.032045z"</span> fill=<span class="string">"#E0E0E0"</span> p-id=<span class="string">"4096"</span>&gt;&lt;/path&gt;&lt;/svg&gt;</div><div class="line">)</div><div class="line"></div><div class="line">//引用的时候直接：</div><div class="line"></div><div class="line">&lt;div&gt;&#123;uploadIcon()&#125;&lt;/div&gt;</div></pre></td></tr></table></figure>
+        <h4 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h4><p>例如：需要返回一个对象，里面包含value和label及children字段</p>
+<p>创造基本构造：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> class Types&#123;</div><div class="line">    construtor(&#123;value,label&#125;)&#123;      //传入所需字段</div><div class="line">        this.value = value;</div><div class="line">        this.label = label;</div><div class="line">        this.children = [];</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    //自定义方法</div><div class="line">    <span class="function"><span class="title">getsome</span></span>()&#123;</div><div class="line">        <span class="keyword">if</span>(this.makeSome)&#123;</div><div class="line">            <span class="built_in">return</span> Promise.resolve(this.makeSome)</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">return</span> new Promise((resolve,reject)=&gt;&#123;</div><div class="line">            asyncFunc(this.value).then((res)=&gt;&#123;</div><div class="line">                <span class="keyword">if</span>(code === 200)&#123;</div><div class="line">                    this.makeSome = res.someData;</div><div class="line">                    resolve(this.makeSome)</div><div class="line">                &#125;<span class="keyword">else</span>&#123;</div><div class="line">                    reject(<span class="string">'no makeSome'</span>)</div><div class="line">                &#125;</div><div class="line">            &#125;)</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>传入生成的方法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> <span class="keyword">function</span> createSome(data)&#123;c</div><div class="line">    <span class="built_in">return</span> new Types(&#123;</div><div class="line">        value : data.value,</div><div class="line">        label : data.label</div><div class="line">    &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -204,7 +313,48 @@
         
         
         <div class="alignright">
-          <a href="/2017/11/01/ReactJs/amap/5svg/#comment" class="comment-link">Comments</a>
+          <a href="/2017/11/01/ES6/class/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-11-01T13:18:28.000Z"><a href="/2017/11/01/ES6/kuozhan/">2017-11-01</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/11/01/ES6/kuozhan/">扩展运算符</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str = <span class="string">'1234'</span>;</div><div class="line">var arr5 = [...str];</div><div class="line"></div><div class="line">arr5;   //[<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>]</div></pre></td></tr></table></figure>
+<h4 id="例"><a href="#例" class="headerlink" title="例"></a>例</h4>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ES6/kuozhan/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/11/01/ES6/kuozhan/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -225,31 +375,66 @@
         <time datetime="2017-11-01T13:18:26.000Z"><a href="/2017/11/01/ReactJs/amap/4map/">2017-11-01</a></time>
         
   
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/4map/">P3:map进阶</a></h1>
+    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/4map/">P4:map进阶</a></h1>
   
 
     </header>
 
     <div class="entry">
       
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>在后台返回的一个对象里面需要增加自己所需的某个字段</p>
-<p>例：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="built_in">let</span> &#123;talentOrderList&#125;  = res ;      //res解构，包含talentOrderList字段，<span class="built_in">type</span>=Array</div><div class="line"></div><div class="line">this.needList = talentOrderList.map(order =&gt; &#123;</div><div class="line">    //增加所需字段</div><div class="line">    order.needCode1 = order.code == 1 &amp;&amp; <span class="string">'等于1'</span></div><div class="line">    order.needCode2 = order.code == 1 ? <span class="string">'等于1'</span> : order.other == 0 ? <span class="string">'等于0'</span> : <span class="string">'其他'</span></div><div class="line">    <span class="built_in">return</span> order;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>在后台返回的一个对象里面需要增加自己所需的某个字段</p>
       
     </div>
     <footer>
       
         
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/4map/#more" class="more-link">Read More</a>
+          </div>
+        
         
         <div class="alignright">
           <a href="/2017/11/01/ReactJs/amap/4map/#comment" class="comment-link">Comments</a>
+        </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2017-11-01T13:18:26.000Z"><a href="/2017/11/01/ES6/map/">2017-11-01</a></time>
+        
+  
+    <h1 class="title"><a href="/2017/11/01/ES6/map/">map进阶</a></h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>在后台返回的一个对象里面需要增加自己所需的某个字段</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ES6/map/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+        <div class="alignright">
+          <a href="/2017/11/01/ES6/map/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -277,253 +462,20 @@
 
     <div class="entry">
       
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>一开始在react的public下的index.html下引用了阿里巴巴flexible.js,源代码判断了设备像素比(device pixel ratio),会导致不同手机下缩放不一样，</p>
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>一开始在react的public下的index.html下引用了阿里巴巴flexible.js,源代码判断了设备像素比(device pixel ratio),会导致不同手机下缩放不一样，</p>
 <p>样式的定义也就成了</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.selector</span> &#123;<span class="attribute">width</span>: <span class="number">2rem</span>;<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;&#125;</div><div class="line"></div><div class="line"><span class="selector-attr">[data-dpr="1"]</span> <span class="selector-class">.selector</span> &#123;<span class="attribute">height</span>: <span class="number">32px</span>;<span class="attribute">font-size</span>: <span class="number">14px</span>;&#125;</div><div class="line"></div><div class="line"><span class="selector-attr">[data-dpr="2"]</span> <span class="selector-class">.selector</span> &#123;<span class="attribute">height</span>: <span class="number">64px</span>;<span class="attribute">font-size</span>: <span class="number">28px</span>;</div></pre></td></tr></table></figure>
-<p>Amap引用之后，地图的显示会变的更小，因为里面的组件都是px单位。</p>
-<p>解决方法1：</p>
-<p>进入含有地图的页面，将meta标签device pixel ratio都设置为1，退出之后重新设置为原来的。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> metaEl = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'meta'</span>),</div><div class="line">    len = metaEl.length;</div><div class="line">    </div><div class="line">componentWillMount()&#123;</div><div class="line">    <span class="keyword">this</span>.setState(&#123;</div><div class="line">          <span class="attr">meta</span>:metaEl[len<span class="number">-1</span>].content</div><div class="line">    &#125;)</div><div class="line">    metaEl[len<span class="number">-1</span>].setAttribute(<span class="string">'content'</span>, <span class="string">'width=device-width,initial-scale=1,user-scalable=no'</span>);</div><div class="line">&#125;</div><div class="line">componentWillUnmount()&#123;</div><div class="line">    <span class="keyword">let</span> temp = <span class="keyword">this</span>.state.meta;</div><div class="line">    metaEl[len<span class="number">-1</span>].setAttribute(<span class="string">'content'</span>, temp);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>解决方法2：</p>
-<p>index.html增加<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no&quot; /&gt;</code><br>这样所有的页面都是1.</p>
-<p>放个简单模板：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"yes"</span> <span class="attr">name</span>=<span class="string">"apple-mobile-web-app-capable"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"yes"</span> <span class="attr">name</span>=<span class="string">"apple-touch-fullscreen"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"telephone=no,email=no"</span> <span class="attr">name</span>=<span class="string">"format-detection"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"root"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2017/11/01/ReactJs/amap/3rem/#more" class="more-link">Read More</a>
+          </div>
         
         
         <div class="alignright">
           <a href="/2017/11/01/ReactJs/amap/3rem/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2017-11-01T12:12:16.000Z"><a href="/2017/11/01/ReactJs/amap/2onfunc/">2017-11-01</a></time>
-        
-  
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/2onfunc/">P2:AMap相关API调用</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ul>
-<li>插件暴露的事件调用</li>
-</ul>
-<p>AMap插件一搬有三个选项，options、方法、事件，事件调用方法：</p>
-<p>如图：<img src="/assets/rj/17.png" alt=""></p>
-<p>如何调用：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">...some code</div><div class="line">window.AMap.plugin([<span class="string">'AMap.ToolBar'</span>],()=&gt;&#123;</div><div class="line">    //options填充</div><div class="line">    _this.toolBar = new window.AMap.ToolBar(&#123;</div><div class="line">            autoPosition:<span class="literal">true</span>,</div><div class="line">            noIpLocate:<span class="literal">true</span>,</div><div class="line">            visible: <span class="literal">false</span></div><div class="line">    &#125;);</div><div class="line">    //事件调用监听</div><div class="line">    _this.toolBar.on(<span class="string">'location'</span>,(x,y)=&gt;&#123;</div><div class="line">        _this.setState(&#123;</div><div class="line">            isGPS:<span class="literal">false</span>,</div><div class="line">            currentLocation: <span class="string">'loading...'</span></div><div class="line">        &#125;);</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line">map.addControl(_this.toolBar);</div><div class="line">&#125;);</div><div class="line">...some code</div></pre></td></tr></table></figure>
-<ul>
-<li>铺图层</li>
-</ul>
-<p>相关链接:<a href="http://lbs.amap.com/api/javascript-api/guide/draw-on-map/layer/" target="_blank" rel="external">使用自己的栅格图</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">this.alamapLayer = null;</div><div class="line">//创建map之后，执行</div><div class="line">_this.alamapLayer = new window.AMap.TileLayer(&#123;</div><div class="line">        tileUrl:<span class="string">'http://-------------------/map/[z]/[y]/[x]'</span>,</div><div class="line">        zIndex:1</div><div class="line">&#125;)</div><div class="line">_this.alamapLayer.setMap(map);</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-        <div class="alignright">
-          <a href="/2017/11/01/ReactJs/amap/2onfunc/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2017-11-01T12:08:16.000Z"><a href="/2017/11/01/ReactJs/amap/1babel/">2017-11-01</a></time>
-        
-  
-    <h1 class="title"><a href="/2017/11/01/ReactJs/amap/1babel/">P1:babel相关报错</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>放个链接 <a href="https://gitee.com/HiMrHu/ReactGuanFangJiaoShouJia/tree/master" target="_blank" rel="external">胡先生</a></p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2017/11/01/ReactJs/amap/1babel/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2017/11/01/ReactJs/amap/1babel/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2017-09-01T12:38:51.000Z"><a href="/2017/09/01/VUE/canvas/">2017-09-01</a></time>
-        
-  
-    <h1 class="title"><a href="/2017/09/01/VUE/canvas/">vue.js/canvas小项目问题集合</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2017/09/01/VUE/canvas/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2017/09/01/VUE/canvas/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2017-09-01T12:01:01.000Z"><a href="/2017/09/01/VUE/component/">2017-09-01</a></time>
-        
-  
-    <h1 class="title"><a href="/2017/09/01/VUE/component/">vue组件互相传值</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        <h4 id="父组件传值给子组件"><a href="#父组件传值给子组件" class="headerlink" title="父组件传值给子组件"></a>父组件传值给子组件</h4>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2017/09/01/VUE/component/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-        <div class="alignright">
-          <a href="/2017/09/01/VUE/component/#comment" class="comment-link">Comments</a>
-        </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2017-07-30T11:55:46.000Z"><a href="/2017/07/30/ReactJs/canvas/3mohu/">2017-07-30</a></time>
-        
-  
-    <h1 class="title"><a href="/2017/07/30/ReactJs/canvas/3mohu/">P3.reactjs下canvas模糊</a></h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#canvas模糊"><span class="toc-text">canvas模糊</span></a></li></ol>
-    </div>
-
-        <a id="more"></a>
-<h4 id="canvas模糊"><a href="#canvas模糊" class="headerlink" title="canvas模糊"></a>canvas模糊</h4><p>点击事件获取的坐标没有问题，但是drawImage方法画出的图模糊，如下：</p>
-<p>如图：<img src="/assets/rj/9.png" alt=""></p>
-<p>宽高不要写在style里，写在标签上</p>
-<p><code>&lt;canvas style={{width:x,height:y}}&gt;&lt;/canvas&gt;</code>–&gt;错误</p>
-<p><code>&lt;canvas width={375} height={667-64}&gt;&lt;/canvas&gt;</code>–&gt;正确</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-        <div class="alignright">
-          <a href="/2017/07/30/ReactJs/canvas/3mohu/#comment" class="comment-link">Comments</a>
         </div>
         
       
@@ -547,7 +499,7 @@
   
 <div class="widget tag">
   <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/">【Git】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/Git初级知识/">Git初级知识</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/">【JS库】</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/">【JS插件】</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/checkbox-city多选器/">checkbox+city多选器</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/uploadImg/">uploadImg</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/webuploader-js/">webuploader.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/插件集合/">插件集合</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/阿里云视频点播web端/">阿里云视频点播web端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/">【React Native】</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/MAC常见运行错误/">MAC常见运行错误</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/RN的文字缩进/">RN的文字缩进</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/Warning-setState-Can-only-update-a-mounted-or-mounting-component/">Warning setState(...) Can only update a mounted or mounting component]...</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/XMLHttpRequest的一种使用/">XMLHttpRequest的一种使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/react-native-video-Android-获取视频总时长/">react-native-video Android 获取视频总时长</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/tab-navigator/">tab-navigator</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/一种首页路由/">一种首页路由</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/源代码/">源代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/类SegmentedControlIOS/">类SegmentedControlIOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/组件传值/">组件传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/设置像素/">设置像素</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/">【React.js】</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/AMap公众号/">AMap公众号</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/canvas小项目/">canvas小项目</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/基础复习/">基础复习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/案例上传到Github/">案例上传到Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/通用Fetch/">通用Fetch</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/">【VUE】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/scoped-动态class-动态style-app交互/">scoped/动态class/动态style/app交互</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/vue组件互相传值/">vue组件互相传值</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/">【兼容性】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/CSS3动画在手机浏览器-微信浏览器不显示/">CSS3动画在手机浏览器/微信浏览器不显示</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的RGBA/">IE8下的RGBA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的innerHTML兼容问题/">IE8下的innerHTML兼容问题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE下的nextElement/">IE下的nextElement</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/">【小程序】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/小程序的代码/">小程序的代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/根据json返回个几分钟前/">根据json返回个几分钟前</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/">【常用总结】</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/60s倒计时-毫秒计时-千位级毫秒计时/">60s倒计时 || 毫秒计时 || 千位级毫秒计时</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/cookies/">cookies</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/splice应用/">splice应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/substring应用/">substring应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/timeStamp应用/">timeStamp应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/unicode编码转换/">unicode编码转换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/xmlHttpRequest-ajax封装-nginx代理跨域-常见错误码/">xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/后续分离/">后续分离</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/睡眠排序/">睡眠排序</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/">【移动端】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/另一个版本的media查询/">另一个版本的media查询</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/">【规范】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/jq书写规范/">jq书写规范</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/前端书写规范/">前端书写规范</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/">【调试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/手机端调试网页/">手机端调试网页</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/">【面试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/面试题总结/">面试题总结</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/">【页面效果】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/CSS实现的3D按钮-X按钮/">CSS实现的3D按钮 + X按钮</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/css磨皮效果/">css磨皮效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/transition应用/">transition应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/二级选项/">二级选项</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/原生JS简易轮播/">原生JS简易轮播</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/呼吸灯/">呼吸灯</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/导航条随屏幕滚动至一定距离后fixed/">导航条随屏幕滚动至一定距离后fixed</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/滚动播报/">滚动播报</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/简单图片爆炸效果/">简单图片爆炸效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/背景色平滑变换/">背景色平滑变换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/选集/">选集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/链接平滑滚动到锚点/">链接平滑滚动到锚点</a><span class="category-list-count">1</span></li></ul></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/">【ES6】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/扩展运算符/">...扩展运算符</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/class对象构造/">class对象构造</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/findIndex使用/">findIndex使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【ES6】/map进阶使用/">map进阶使用</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/">【Git】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【Git】/Git初级知识/">Git初级知识</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/">【JS库】</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery/">jQuery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-L7/">jQuery+L7</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS库】/jQuery-SUI/">jQuery+SUI</a><span class="category-list-count">6</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/">【JS插件】</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/checkbox-city多选器/">checkbox+city多选器</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/swipe-js/">swipe.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/uploadImg/">uploadImg</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/webuploader-js/">webuploader.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/插件集合/">插件集合</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【JS插件】/阿里云视频点播web端/">阿里云视频点播web端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/">【React Native】</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/MAC常见运行错误/">MAC常见运行错误</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/RN的文字缩进/">RN的文字缩进</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/Warning-setState-Can-only-update-a-mounted-or-mounting-component/">Warning setState(...) Can only update a mounted or mounting component]...</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/XMLHttpRequest的一种使用/">XMLHttpRequest的一种使用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/react-native-video-Android-获取视频总时长/">react-native-video Android 获取视频总时长</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/tab-navigator/">tab-navigator</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/一种首页路由/">一种首页路由</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/源代码/">源代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/类SegmentedControlIOS/">类SegmentedControlIOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/组件传值/">组件传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-Native】/设置像素/">设置像素</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/">【React.js】</a><span class="category-list-count">24</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/AMap公众号/">AMap公众号</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/canvas小项目/">canvas小项目</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/基础复习/">基础复习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/案例上传到Github/">案例上传到Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【React-js】/通用Fetch/">通用Fetch</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/">【VUE】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/scoped-动态class-动态style-app交互/">scoped/动态class/动态style/app交互</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/vue组件互相传值/">vue组件互相传值</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【VUE】/常用技巧/">常用技巧</a><span class="category-list-count">10</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/">【兼容性】</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/CSS3动画在手机浏览器-微信浏览器不显示/">CSS3动画在手机浏览器/微信浏览器不显示</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的RGBA/">IE8下的RGBA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE8下的innerHTML兼容问题/">IE8下的innerHTML兼容问题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【兼容性】/IE下的nextElement/">IE下的nextElement</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/">【小程序】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/小程序的代码/">小程序的代码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【小程序】/根据json返回个几分钟前/">根据json返回个几分钟前</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/">【常用总结】</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/60s倒计时-毫秒计时-千位级毫秒计时/">60s倒计时 || 毫秒计时 || 千位级毫秒计时</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/cookies/">cookies</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/splice应用/">splice应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/substring应用/">substring应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/timeStamp应用/">timeStamp应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/unicode编码转换/">unicode编码转换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/xmlHttpRequest-ajax封装-nginx代理跨域-常见错误码/">xmlHttpRequest => $.ajax封装 || nginx代理跨域 || 常见错误码</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/后续分离/">后续分离</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/如何数组洗牌/">如何数组洗牌</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【常用总结】/睡眠排序/">睡眠排序</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/">【移动端】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【移动端】/另一个版本的media查询/">另一个版本的media查询</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/">【规范】</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/jq书写规范/">jq书写规范</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【规范】/前端书写规范/">前端书写规范</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/">【调试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【调试】/手机端调试网页/">手机端调试网页</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/">【面试】</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【面试】/面试题总结/">面试题总结</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/">【页面效果】</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/CSS实现的3D按钮-X按钮/">CSS实现的3D按钮 + X按钮</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/css磨皮效果/">css磨皮效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/transition应用/">transition应用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/二级选项/">二级选项</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/原生JS简易轮播/">原生JS简易轮播</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/呼吸灯/">呼吸灯</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/导航条随屏幕滚动至一定距离后fixed/">导航条随屏幕滚动至一定距离后fixed</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/滚动播报/">滚动播报</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/简单图片爆炸效果/">简单图片爆炸效果</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/背景色平滑变换/">背景色平滑变换</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/选集/">选集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/【页面效果】/链接平滑滚动到锚点/">链接平滑滚动到锚点</a><span class="category-list-count">1</span></li></ul></li></ul> 
 </div>
  
 
@@ -589,7 +541,7 @@
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">37</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">公元 2017 年</a><span class="archive-list-count">53</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">公元 2016 年</a><span class="archive-list-count">53</span></li></ul>
   </div>
 
 </aside>
