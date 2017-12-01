@@ -1,5 +1,5 @@
 ---
-title: 通用Fetch和对象构造
+title: 通用Fetch
 date: 2017-03-20 18:20:56
 categories:
 - 【React.js】
@@ -12,6 +12,20 @@ categories:
 
 ```bash
 import 'whatwg-fetch';
+```
++ commonParam
+
+```bash
+
+export function param(data){
+    let url = '';
+    for(var k in data){
+        let value = data[k] !== undefined ? data[k] : '';
+        url += '&' + k + '=' + encodeURIComponent(value);
+    }
+    return url ? url.substring(1) : '';     //substring(1),返回1到length的字符串
+}
+
 ```
 
 + GET
@@ -30,11 +44,15 @@ export function get(base,url,params) {
             url = url + '?' + dataStr
         }
     }
+    
+    //如果用楼上的commonParam
+    //url += (url.indexOf('?') < 0 ? '?' : '&') + param(params)
 
     return fetch(url)
         .then(function(response) {
             if(response.status === 200){
-                return response.json()
+                return response.json();
+                //return Promise.resolve(response)  //res直接resolve也可以，见下图
             }else{
                 Toast.info(response.status+'  '+response.statusText, 1);
                 return false;
@@ -44,6 +62,12 @@ export function get(base,url,params) {
         })
     };
 ```
+
+response:
+![](/assets/rj/20.png)
+Promise.resolve(response.data):
+![](/assets/rj/21.png)
+
 
 + POST
 
@@ -110,32 +134,25 @@ export function uploadImage(base,url,params){
 
 ```
 
-#### 构造
-
-例如：需要返回一个对象，里面包含value和label及children字段
-
-创造基本构造：
++ JSONP
 
 ```bash
-export class Types{
-    construtor({value,label}){      //传入所需字段
-        this.value = value;
-        this.label = label;
-        this.children = [];
-    }
-}
-```
-
-传入生成的方法：
-
-```bash
-export function createSome(data){
-    return new Types({
-        value : data.value,
-        label : data.label
+import originJsonp from 'jsonp'
+export function jsonp(url,data,option){
+    url += (url.indexOf('?') < 0 ? '?' : '&') + param(data);
+    return new Promise((resolve,reject)=>{
+        originJsonp(url,option,(err,data) => {
+            if(!err){
+                resolve(data)
+            }else{
+                reject(err)
+            }
+        })
     })
 }
+//使用直接return jsonp(各种参数)
 ```
+
 
 
 

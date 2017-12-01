@@ -49,7 +49,32 @@ export default {
 export default {
     ...
     props:['titleObj']
+    //
+    props:{
+        titleObj:{
+            type:String,
+            defalut:'默认'
+        }
+    }
 } 
+```
+
+#### 父组件调用子组件方法
+
+```bash
+    子：
+    methods:{
+        setQuery(query){
+            this.query = query
+        }
+    }
+    父：
+    <search-box ref="searchBox"></search-box>
+    methods:{
+        some(query){
+            this.$refs.searchBox.setQuery(query);
+        }
+    }
 ```
 
 #### 子组件绑定父组件方法

@@ -38,3 +38,13 @@ ios下调试safari或者app里内嵌的html
 -  7、http://localhost:9221/   右键复制链接地址打开调试即可。
 
 #### Vconsole
+
+地址：[github](https://github.com/Tencent/vConsole)
+
+使用：
+
+1. npm install vconsole
+
+2. var vConsole = new VConsole();
+
+3. console.log('hello')
