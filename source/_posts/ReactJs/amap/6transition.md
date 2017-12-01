@@ -60,7 +60,30 @@ export default class App extends Component{
     }
 }
 
+//style
+
+.fill{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #EBEBEB;
+}
+.fade-enter {
+    opacity: 0;
+    filter: blur(10px);
+    z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 250ms cubic-bezier(0.86, 0.18, 0.82, 1.32);
+}
+
 ```
+
+相关链接:[CSSTransitionGroup](https://reacttraining.com/react-router/web/example/animated-transitions)
 
 
 
