@@ -6,9 +6,11 @@ categories:
 - canvas小项目
 ---
 
-<!--more-->
+
 
 #### scroll事件
+
+<!--more-->
 
 componentDidMout添加了addEventListener，scroll获取不到this，如下：
 

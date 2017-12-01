@@ -6,13 +6,14 @@ categories:
 - canvas小项目
 ---
 
-<!--more-->
 
 #### 打包放置在服务器
 
 服务器要配置npm环境,然后npm install serve -g
 
 serve -s 执行  
+
+<!--more-->
 
 ps:[如果已经设置了服务器环境，直接放置在域名目录下即可]
 

@@ -6,11 +6,12 @@ categories:
 - canvas小项目
 ---
 
-<!--more-->
 
 #### react-route的modal/index跳转
 
 index与modal多次跳转，componentWillUpdate会被多次触发，点击事件也触发该事件。
+
+<!--more-->
 
 但路由跳转只触发了componentWillReceiveProps
 
