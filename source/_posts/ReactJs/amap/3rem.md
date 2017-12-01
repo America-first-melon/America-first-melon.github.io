@@ -6,13 +6,15 @@ categories:
 - AMap公众号
 ---
 
-<!--more-->
+
 
 #### 问题
 
 一开始在react的public下的index.html下引用了阿里巴巴flexible.js,源代码判断了设备像素比(device pixel ratio),会导致不同手机下缩放不一样，
 
 样式的定义也就成了
+
+<!--more-->
 
 ```css
 .selector {width: 2rem;border: 1px solid #ddd;}

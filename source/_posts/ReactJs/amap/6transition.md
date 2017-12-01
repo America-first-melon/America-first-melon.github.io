@@ -6,11 +6,12 @@ categories:
 - AMap公众号
 ---
 
-<!--more-->
 
 #### 描述
 
 package.json : "react-transition-group": "^1.2.1"
+
+<!--more-->
 
 上代码，主页：
 
