@@ -217,12 +217,35 @@
     <div class="entry">
       
         <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>首先 store 文件夹下的结构为：</p>
-<p>actions.js</p>
-<p>getter.js</p>
-<p>index.js</p>
-<p>mutation-types.js</p>
-<p>mutations.js</p>
-<p>state.js</p>
+<ul>
+<li>index.js</li>
+</ul>
+<p>入口文件</p>
+<ul>
+<li>state.js：</li>
+</ul>
+<p>1,整个应用状态的数据<br>2,可以通过<code>this.$store.state</code>获取状态<br>3,用mapState将其映射到computed里面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import &#123;mapState&#125; from <span class="string">'vuex'</span></div><div class="line"><span class="built_in">export</span> default&#123;</div><div class="line">    <span class="function"><span class="title">computed</span></span>()&#123;</div><div class="line">        const state =&gt; state.count</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>getter.js</li>
+</ul>
+<p>1,有时候我们需要从store中的state中派生出来一些状态,Vuex 允许我们在store中定义“getter”，就是store的计算属性，<br>2,可以通过<code>this.$store.getters.valueName</code>获取到这些状态<br>3,用mapGetter将其映射到computed里面去<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">getter:&#123;</div><div class="line">    <span class="keyword">do</span>Some:state =&gt;&#123;</div><div class="line">        <span class="built_in">return</span> state.doSome.filter(todo =&gt; todo.done)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">export</span> default &#123;</div><div class="line">    computed: mapGetters([</div><div class="line">        <span class="string">'doSome'</span></div><div class="line">    ])</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>mutation-types.js</li>
+</ul>
+<p>定义一些const,触发方法，</p>
+<p>例如：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> const SET_SOMETHING = <span class="string">"SET_SOMETHING"</span></div></pre></td></tr></table></figure>
+<ul>
+<li>mutations.js</li>
+</ul>
+<p>1,变化，利用他来更改状态，接收的唯一参数就是<code>state</code>,<code>store.commit(mutationName)</code>是用来触发一个mutation的方法<br>2,可以通过<code>this.$store.commit</code>执行，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">const mutations = &#123;</div><div class="line">    mutationName(state)&#123;</div><div class="line">        //如何改变，some code</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//this.<span class="variable">$store</span>.commit(<span class="string">'mutationName'</span>);</div></pre></td></tr></table></figure></p>
+<p>3,用mapMutations将其映射到methods里面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> default &#123;</div><div class="line">    methods: mapMutations([</div><div class="line">        <span class="string">'mutationName'</span></div><div class="line">    ])</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>actions.js</li>
+</ul>
+<p>改变状态，通过触发mutations实现，可以包含异步操作。</p>
+<p>辅助函数为mapActions，与mapMutations类似，也是映射到methods。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">const actions = &#123;</div><div class="line">    actionName(&#123; commit &#125;) &#123;</div><div class="line">        //dosomething</div><div class="line">        commit(<span class="string">'mutationName'</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="built_in">export</span> default &#123;</div><div class="line">    methods: mapActions([</div><div class="line">        <span class="string">'actionName'</span>,</div><div class="line">    ])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     <footer>
