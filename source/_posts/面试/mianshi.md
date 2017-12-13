@@ -121,6 +121,95 @@ function total(n){
 
 ```
 
+实例：一个对象中，包含不确定的数组，数组里面有不确定的children数组,获取之。。。
+
+```javascript
+const data = [{
+  key: 1,
+  name: '登录场景1',
+  attrs: '一级场景',
+  describe: '',
+  status:'启用',
+  children: [{
+    key: 11,
+    name: '支付宝认证场景11',
+    attrs: '二级场景',
+    describe: '',
+    status:'启用',
+  }, {
+    key: 12,
+    name: '公积金认证场景12',
+    attrs: '二级场景',
+    describe: '',
+    children: [{
+      key: 121,
+      name: '社保卡补充121',
+      attrs: '三级场景',
+      address: 'New York No. 3 Lake Park',
+    }],
+    }, {
+      key: 13,
+      name: '其他认证13',
+      attrs: '二级场景',
+      describe: 'London No. 1 Lake Park',
+        children: [{
+          key: 131,
+          name: '卡梅隆131',
+          attrs: '三级场景',
+          describe: 'London No. 2 Lake Park',
+          children: [{
+              key: 1311,
+              name: '还有？1311',
+              attrs: '四级场景',
+              describe: 'London No. 3 Lake Park',
+            }, {
+              key: 1312,
+              name: 'Jimmy Green sr.1312',
+              attrs: '四级场景',
+              describe: 'London No. 4 Lake Park',
+            }],
+      }],
+  }],
+}, {
+  key: 2,
+  name: '注册场景2',
+  attrs: '一级场景',
+  describe: '注册场景注册场景注册场景注册场景注册场景注册场景',
+  },
+{
+  key: 3,
+  name: '禁用之3',
+  attrs: '一级场景',
+  describe: '注册场景注册场景注册场景注册场景注册场景注册场景',
+}];
+
+//获取其中的key
+
+let a = [],b = [];
+function aa(s){
+  for(let i in s){
+    for(let j in s[i]){
+      if(j === 'key'){
+        b.push(s[i][j])
+      }else if(j === 'children'){
+        aa(s[i][j])
+      }
+    }
+  }
+};
+function oo(s){
+  for(let i in s){
+    if(i === 'key'){
+      a.push(s[i])
+    }else if(i == 'children'){
+      aa(s[i])
+    }
+  }
+};
+oo(data);
+
+```
+
 + 可枚举属性
 
 for in 会顺着原型链,把可枚举属性都枚举出来,只遍历可枚举属性。;
